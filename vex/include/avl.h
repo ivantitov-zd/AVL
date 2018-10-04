@@ -2,5 +2,6 @@
 #define _avl_
 
 #include "aprimarea.h"
+#include "aprimperimeter.h"
 
 #endif
