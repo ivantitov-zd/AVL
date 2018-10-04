@@ -3,5 +3,6 @@
 
 #include "aprimarea.h"
 #include "aprimperimeter.h"
+#include "aprimvolume.h"
 
 #endif
