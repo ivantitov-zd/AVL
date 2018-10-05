@@ -2,9 +2,9 @@
 #define _aprimperimeter_
 
 float
-aprimperimeter(const int input; const int primnum)
+aprimperimeter(const int geometry; const int primnum)
 {
-    return primintrinsic(input, 'measuredperimeter', primnum);
+    return primintrinsic(geometry, 'measuredperimeter', primnum);
 }
 
 float

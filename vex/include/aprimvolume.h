@@ -2,9 +2,9 @@
 #define _aprimvolume_
 
 float
-aprimvolume(const int input; const int primnum)
+aprimvolume(const int geometry; const int primnum)
 {
-    return primintrinsic(input, 'measuredvolume', primnum);
+    return primintrinsic(geometry, 'measuredvolume', primnum);
 }
 
 float
