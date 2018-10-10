@@ -90,6 +90,14 @@ aswap(int valueA[]; int valueB[])
 }
 
 void
+aswap(string valueA[]; string valueB[])
+{
+    string temp[] = valueA;
+    valueA = valueB;
+    valueB = temp;
+}
+
+void
 aswap(vector2 valueA[]; vector2 valueB[])
 {
     vector2 temp[] = valueA;
