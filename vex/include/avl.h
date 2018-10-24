@@ -7,5 +7,6 @@
 #include "around.h"
 #include "aswap.h"
 #include "aangle.h"
+#include "amacro.h"
 
 #endif
