@@ -8,5 +8,6 @@
 #include "aswap.h"
 #include "aangle.h"
 #include "amacro.h"
+#include "aunique.h"
 
 #endif
