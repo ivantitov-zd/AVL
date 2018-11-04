@@ -18,5 +18,6 @@
 #include "aprimattribs.h"
 #include "adetailattribs.h"
 #include "apointgroups.h"
+#include "avertexgroups.h"
 
 #endif
