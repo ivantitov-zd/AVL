@@ -14,5 +14,6 @@
 #include "ashift.h"
 #include "apolyneighbours.h"
 #include "apointattribs.h"
+#include "avertexattribs.h"
 
 #endif
