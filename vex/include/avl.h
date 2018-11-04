@@ -11,5 +11,6 @@
 #include "aunique.h"
 #include "amedian.h"
 #include "aclamp.h"
+#include "ashift.h"
 
 #endif
