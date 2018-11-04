@@ -19,5 +19,6 @@
 #include "adetailattribs.h"
 #include "apointgroups.h"
 #include "avertexgroups.h"
+#include "aprimgroups.h"
 
 #endif
