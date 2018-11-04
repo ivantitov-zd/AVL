@@ -2,7 +2,7 @@
 #define _amedian_
 
 float
-amedian(float array_[])
+amedian(const float array_[])
 {
     float sorted[] = sort(array_);
     int arrayLength = len(sorted);
@@ -15,7 +15,7 @@ amedian(float array_[])
 }
 
 float
-amedian(int array_[])
+amedian(const int array_[])
 {
     int sorted[] = sort(array_);
     int arrayLength = len(sorted);
