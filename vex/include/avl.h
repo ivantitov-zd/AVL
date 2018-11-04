@@ -12,5 +12,6 @@
 #include "amedian.h"
 #include "aclamp.h"
 #include "ashift.h"
+#include "apolyneighbours.h"
 
 #endif
