@@ -9,5 +9,6 @@
 #include "aangle.h"
 #include "amacro.h"
 #include "aunique.h"
+#include "amedian.h"
 
 #endif
