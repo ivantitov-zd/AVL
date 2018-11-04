@@ -13,5 +13,6 @@
 #include "aclamp.h"
 #include "ashift.h"
 #include "apolyneighbours.h"
+#include "apointattribs.h"
 
 #endif
