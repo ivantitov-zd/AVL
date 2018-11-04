@@ -10,5 +10,6 @@
 #include "amacro.h"
 #include "aunique.h"
 #include "amedian.h"
+#include "aclamp.h"
 
 #endif
