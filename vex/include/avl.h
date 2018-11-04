@@ -15,5 +15,6 @@
 #include "apolyneighbours.h"
 #include "apointattribs.h"
 #include "avertexattribs.h"
+#include "aprimattribs.h"
 
 #endif
