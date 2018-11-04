@@ -16,5 +16,6 @@
 #include "apointattribs.h"
 #include "avertexattribs.h"
 #include "aprimattribs.h"
+#include "adetailattribs.h"
 
 #endif
