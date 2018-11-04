@@ -20,5 +20,6 @@
 #include "apointgroups.h"
 #include "avertexgroups.h"
 #include "aprimgroups.h"
+#include "aedgegroups.h"
 
 #endif
