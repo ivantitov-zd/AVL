@@ -21,5 +21,6 @@
 #include "avertexgroups.h"
 #include "aprimgroups.h"
 #include "aedgegroups.h"
+#include "apadzero.h"
 
 #endif
