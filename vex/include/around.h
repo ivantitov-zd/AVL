@@ -11,8 +11,8 @@ around(const float value; const int ndigits)
 int
 around(const int value; const int ndigits)
 {
-	float shift = pow(10, -abs(ndigits));
-	return int(rint(value * shift) / shift);
+    float shift = (int)pow(10, abs(ndigits));
+    return int(rint(value / shift) * shift);
 }
 
 vector2
@@ -39,56 +39,56 @@ around(const vector4 value; const int ndigits)
 float[]
 around(const float values[]; const int ndigits)
 {
-	float _array[];
-	foreach(float value; values)
-	{
-		append(_array, around(value, ndigits));
-	}
-	return _array;
+    float _array[];
+    foreach(float value; values)
+    {
+        append(_array, around(value, ndigits));
+    }
+    return _array;
 }
 
 int[]
 around(const int values[]; const int ndigits)
 {
-	int _array[];
-	foreach(int value; values)
-	{
-		append(_array, around(value, ndigits));
-	}
-	return _array;
+    int _array[];
+    foreach(int value; values)
+    {
+        append(_array, around(value, ndigits));
+    }
+    return _array;
 }
 
 vector2[]
 around(const vector2 values[]; const int ndigits)
 {
-	vector2 _array[];
-	foreach(vector2 value; values)
-	{
-		append(_array, around(value, ndigits));
-	}
-	return _array;
+    vector2 _array[];
+    foreach(vector2 value; values)
+    {
+        append(_array, around(value, ndigits));
+    }
+    return _array;
 }
 
 vector[]
 around(const vector values[]; const int ndigits)
 {
-	vector _array[];
-	foreach(vector value; values)
-	{
-		append(_array, around(value, ndigits));
-	}
-	return _array;
+    vector _array[];
+    foreach(vector value; values)
+    {
+        append(_array, around(value, ndigits));
+    }
+    return _array;
 }
 
 vector4[]
 around(const vector4 values[]; const int ndigits)
 {
-	vector4 _array[];
-	foreach(vector4 value; values)
-	{
-		append(_array, around(value, ndigits));
-	}
-	return _array;
+    vector4 _array[];
+    foreach(vector4 value; values)
+    {
+        append(_array, around(value, ndigits));
+    }
+    return _array;
 }
 
 #endif
