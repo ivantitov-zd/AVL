@@ -22,5 +22,6 @@
 #include "aprimgroups.h"
 #include "aedgegroups.h"
 #include "apadzero.h"
+#include "aisinside.h"
 
 #endif
