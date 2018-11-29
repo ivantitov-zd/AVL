@@ -23,5 +23,6 @@
 #include "aedgegroups.h"
 #include "apadzero.h"
 #include "aisinside.h"
+#include "aprint.h"
 
 #endif
