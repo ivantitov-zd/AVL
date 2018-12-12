@@ -25,5 +25,6 @@
 #include "aisinside.h"
 #include "aprint.h"
 #include "atrianglearea.h"
+#include "atrianglenormal.h"
 
 #endif
