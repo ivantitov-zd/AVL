@@ -24,5 +24,6 @@
 #include "apadzero.h"
 #include "aisinside.h"
 #include "aprint.h"
+#include "atrianglearea.h"
 
 #endif
