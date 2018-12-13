@@ -26,5 +26,6 @@
 #include "aprint.h"
 #include "atrianglearea.h"
 #include "atrianglenormal.h"
+#include "aisinsphere.h"
 
 #endif
