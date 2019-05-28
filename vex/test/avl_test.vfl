@@ -1,0 +1,39 @@
+#include "avl_assert.h"
+#include "avl.h"
+
+cvex
+avl_tests()
+{
+    avl_print('AVL Test Started');
+
+    // avl_count
+    assert(avl_count('NO DIGITS', '12') == 0);
+    assert(avl_count('Even seven', 'e') == 3);
+    assert(avl_count('houdini best of the best', 'best') == 2);
+    assert(avl_count({-2, 22, 2, 20, 12, -2, 2, 2}, 2) == 3);
+
+    // avl_padzero
+    assert(avl_padzero(32, 4) == '0032');
+    assert(avl_padzero(0, 4) ==  '0000');
+    assert(avl_padzero(32, 1) == '32g');
+
+    // avl_isinsphere
+    assert(avl_isinsphere({0.5, 0.5, 1}, {0, 0, 0}, 2) == 1);
+    assert(avl_isinsphere({1, 0, 0}, {0, 0, 0}, 1) == 1);
+    assert(avl_isinsphere({1, 0, 0}, {0, 0, 0}, 0.99999) == 0);
+
+    // avl_angle
+    assertAlmostEqual(avl_angle({1, 1, 0}, {1, 1, 0}), 0.0, 0.00001);
+    assertAlmostEqual(avl_angle({1, 0, 0}, {0, 1, 0}), 1.5708, 0.0001);
+    assertAlmostEqual(avl_angle({5, 0, 0}, {0, 10, 0}), 1.5708, 0.0001);
+    assertAlmostEqual(avl_angle({1, 0, 0}, {-1, 0, 0}), 3.14159, 0.00001);
+
+    // avl_median
+    assertAlmostEqual(avl_median({14.05, 34.1, 45, 1}), 24.075, 0.0001);
+    assertAlmostEqual(avl_median({2, 7, 1}), 2, 0.00001);
+
+    // avl_medianhigh
+
+    // avl_medianlow
+    avl_print('AVL Test Finished');
+}

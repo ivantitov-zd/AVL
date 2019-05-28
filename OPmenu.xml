@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuDocument>
+    <menu>
+
+        <addScriptItem id="avl_save_as_snippet">
+            <label>as Snippet (AVL)...</label>
+            <parent>opmenu.save_menu</parent>
+            <insertBefore/>
+            <context>
+                <networkCategory>Object,Sop,Dop,Cop2</networkCategory>
+                <expression>
+                    node = kwargs.get('node', None)
+                    if node is None:
+                        return False
+                    return 'wrangle' in node.type().name().lower()
+                </expression>
+            </context>
+        </addScriptItem>
+
+        <addScriptItem id="avl_edit">
+            <label>Open in VEX Editor (AVL)...</label>
+            <parent>root_menu</parent>
+            <insertAfter>opmenu.save_menu</insertAfter>
+            <context>
+                <networkCategory>Object,Sop,Dop,Cop2</networkCategory>
+                <expression>
+                    node = kwargs.get('node', None)
+                    if node is None:
+                        return False
+                    return 'wrangle' in node.type().name().lower()
+                </expression>
+            </context>
+        </addScriptItem>
+
+        <addScriptItem id="avl_optimize">
+            <label>Optimize VEX Code (AVL)...</label>
+            <parent>root_menu</parent>
+            <insertAfter>avl_edit</insertAfter>
+            <context>
+                <networkCategory>Object,Sop,Dop,Cop2</networkCategory>
+                <expression>
+                    node = kwargs.get('node', None)
+                    if node is None:
+                        return False
+                    return 'wrangle' in node.type().name().lower()
+                </expression>
+            </context>
+        </addScriptItem>
+
+    </menu>
+</menuDocument>

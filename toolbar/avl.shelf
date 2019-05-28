@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <toolshelf name="avl" label="Advanced VEX Library">
+    <memberTool name="avl::openshell::1.0"/>
+    <memberTool name="avl::optimizevex::1.0"/>
+    <memberTool name="avl::deploy::1.0"/>
+    <memberTool name="avl::vextoopencl::1.0"/>
+    <memberTool name="avl::vop_update::1.0"/>
+  </toolshelf>
+
+  <tool name="avl::openshell::1.0" label="Open Shell" icon="ROP_shell">
+    <script scriptType="python"><![CDATA[]]></script>
+  </tool>
+
+  <tool name="avl::optimizevex::1.0" label="Optimize VEX" icon="COMMON_engine">
+    <script scriptType="python"><![CDATA[]]></script>
+  </tool>
+
+  <tool name="avl::vextoopencl::1.0" label="VEX to OpenCL" icon="COMMON_opencl">
+    <script scriptType="python"><![CDATA[]]></script>
+  </tool>
+
+  <tool name="avl::deploy::1.0" label="Deploy AVL Code" icon="DESKTOP_launcher">
+    <script scriptType="python"><![CDATA[]]></script>
+  </tool>
+</shelfDocument>
