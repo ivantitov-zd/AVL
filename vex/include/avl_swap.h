@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_swap_
-#define _avl_swap_
+#ifndef _AVL_SWAP_H_
+#define _AVL_SWAP_H_
 
 void
 avl_swap(export float value1; export float value2)
@@ -74,4 +74,4 @@ avl_swap(export matrix value1; export matrix value2)
     value2 = temp;
 }
 
-#endif
+#endif  // _AVL_SWAP_H_

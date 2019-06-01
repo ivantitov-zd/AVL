@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_primarea_
-#define _avl_primarea_
+#ifndef _AVL_PRIMAREA_H_
+#define _AVL_PRIMAREA_H_
 
 float
 avl_primarea(const int geometry; const int primnum)
@@ -14,4 +14,4 @@ avl_primarea(const string geometry; const int primnum)
     return primintrinsic(geometry, 'measuredarea', primnum);
 }
 
-#endif
+#endif  // _AVL_PRIMAREA_H_

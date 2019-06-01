@@ -1,7 +1,7 @@
 #pragma once
-#ifndef _avl_diff_
-#define _avl_diff_
-
+#ifndef _AVL_DIFF_H_
+#define _AVL_DIFF_H_
+// Prototype
 void
 avl_diff(const string str1; const string str2)
 {
@@ -31,4 +31,4 @@ avl_diff(const string str1; const string str2)
     printf('\nRemove:%g\nAdd:%g\n', remove, add);
 }
 
-#endif
+#endif  // _AVL_DIFF_H_

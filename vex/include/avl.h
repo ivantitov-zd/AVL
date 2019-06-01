@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_
-#define _avl_
+#ifndef _AVL_H_
+#define _AVL_H_
 
 #include "avl_primarea.h"
 #include "avl_primperimeter.h"
@@ -74,7 +74,8 @@
 #include "avl_isodd.h"
 #include "avl_iseven.h"
 #include "avl_isinbbox.h"
-//#include "avl_isinsquare.h"
+#include "avl_isinpointbbox.h"
+#include "avl_isinsquare.h"
 //#include "avl_isincircle.h"
 //#include "avl_circlelength.h"
 //#include "avl_circlearea.h"
@@ -102,11 +103,11 @@
 //#include "avl_selectring.h"
 #include "avl_polyarea.h"              2d
 //#include "avl_polyvolume.h"
-//#include "avl_polycentroid.h"           2d
+#include "avl_polycentroid.h"           2d
 //#include "avl_primcentroid.h"
 //#include "avl_polyperimeter.h"            2d
 //#include "avl_triangleperimeter.h"             2d
 //#include "avl_trianglevolume.h"
 //#include "avl_bfind.h"
 
-#endif
+#endif  // _AVL_H_

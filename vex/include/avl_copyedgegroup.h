@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copyedgegroup_
-#define _avl_copyedgegroup_
+#ifndef _AVL_COPYEDGEGROUP_H_
+#define _AVL_COPYEDGEGROUP_H_
 
 #include "avl_setedgegroup.h"
 
@@ -18,4 +18,4 @@ avl_copyedgegroup(const int srcGeometry;
     return avl_setedgegroup(dstGeometry, groupName, dstPtnum0, dstPtnum1, value, mode);
 }
 
-#endif
+#endif  // _AVL_COPYEDGEGROUP_H_

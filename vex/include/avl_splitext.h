@@ -1,12 +1,13 @@
 #pragma once
-#ifndef _avl_splitext_
-#define _avl_splitext_
+#ifndef _AVL_SPLITEXT_H_
+#define _AVL_SPLITEXT_H_
 
 string
 avl_splitext(const string filename)
 {
     int fileNameLength = len(filename);
-    if (fileNameLength == 0) return '';
+    if (fileNameLength < 2)  // Empty or too short filename
+        return '';
     for (int i = --fileNameLength; i >= 0; --i)
     {
         if (filename[i] == '.')
@@ -17,4 +18,4 @@ avl_splitext(const string filename)
     return '';
 }
 
-#endif
+#endif  // _AVL_SPLITEXT_H_

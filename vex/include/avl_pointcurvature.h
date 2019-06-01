@@ -1,12 +1,12 @@
 #pragma once
-#ifndef _avl_pointcurvature_
-#define _avl_pointcurvature_
+#ifndef _AVL_POINTCURVATURE_H_
+#define _AVL_POINTCURVATURE_H_
 
 float
 avl_pointcurvature(const int geometry; const int ptnum)
 {
     int pointNeighbours[] = neighbours(geometry, ptnum);
-    vector directions = {0, 0, 0};
+    vector directions = {0.0, 0.0, 0.0};
     vector pointPosition = point(geometry, 'P', ptnum);
     foreach (int neighbourPoint; pointNeighbours)
         directions += normalize(pointPosition - point(geometry, 'P', neighbourPoint));
@@ -18,7 +18,7 @@ float
 avl_pointcurvature(const string geometry; const int ptnum)
 {
     int pointNeighbours[] = neighbours(geometry, ptnum);
-    vector directions = {0, 0, 0};
+    vector directions = {0.0, 0.0, 0.0};
     vector pointPosition = point(geometry, 'P', ptnum);
     foreach (int neighbourPoint; pointNeighbours)
         directions += normalize(pointPosition - point(geometry, 'P', neighbourPoint));
@@ -26,4 +26,4 @@ avl_pointcurvature(const string geometry; const int ptnum)
     return dot(pointNormal, directions / len(pointNeighbours));
 }
 
-#endif
+#endif  // _AVL_POINTCURVATURE_H_

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copyprimgroups_
-#define _avl_copyprimgroups_
+#ifndef _AVL_COPYPRIMGROUPS_H_
+#define _AVL_COPYPRIMGROUPS_H_
 
 #include "avl_primgroups.h"
 #include "avl_copyprimgroup.h"
@@ -31,4 +31,4 @@ avl_copyprimgroups(const int srcGeometry;
             avl_copyprimgroup(srcGeometry, dstGeometry, srcPrimnum, dstPrimnum, groupName, mode);
 }
 
-#endif
+#endif  // _AVL_COPYPRIMGROUPS_H_

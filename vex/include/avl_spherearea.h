@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_spherearea_
-#define _avl_spherearea_
+#ifndef _AVL_SPHEREAREA_H_
+#define _AVL_SPHEREAREA_H_
 
 float
 avl_spherearea(const float radius)
@@ -8,4 +8,4 @@ avl_spherearea(const float radius)
     return 12.566370614359172 * radius * radius;
 }
 
-#endif
+#endif  // _AVL_SPHEREAREA_H_

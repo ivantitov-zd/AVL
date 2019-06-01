@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copyedgegroups_
-#define _avl_copyedgegroups_
+#ifndef _AVL_COPYEDGEGROUPS_H_
+#define _AVL_COPYEDGEGROUPS_H_
 
 #include "avl_edgegroups.h"
 #include "avl_copyedgegroup.h"
@@ -35,4 +35,4 @@ avl_copyedgegroups(const int srcGeometry;
             avl_copyedgegroup(srcGeometry, dstGeometry, srcPtnum0, srcPtnum1, dstPtnum0, dstPtnum1, groupName, mode);
 }
 
-#endif
+#endif  // _AVL_COPYEDGEGROUPS_H_

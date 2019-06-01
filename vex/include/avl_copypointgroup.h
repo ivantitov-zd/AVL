@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copypointgroup_
-#define _avl_copypointgroup_
+#ifndef _AVL_COPYPOINTGROUP_H_
+#define _AVL_COPYPOINTGROUP_H_
 
 int
 avl_copypointgroup(const int srcGeometry;
@@ -14,4 +14,4 @@ avl_copypointgroup(const int srcGeometry;
     return setpointgroup(dstGeometry, groupName, dstPtnum, value, mode);
 }
 
-#endif
+#endif  // _AVL_COPYPOINTGROUP_H_

@@ -1,12 +1,12 @@
 #pragma once
-#ifndef _avl_reversevertexorder_
-#define _avl_reversevertexorder_
+#ifndef _AVL_REVERSEVERTEXORDER_H_
+#define _AVL_REVERSEVERTEXORDER_H_
 
 void
 avl_reversevertexorder(const int geometry; const int primnum)
 {
     int vertexCount = primvertexcount(geometry, primnum);
-    int index;  // stores linear vertex index and point number
+    int index;  // Stores linear vertex index and point number
     for (int vtxnum = 0; vtxnum < vertexCount; ++vtxnum)
     {
         index = vertexindex(geometry, primnum, vertexCount - vtxnum);
@@ -15,4 +15,4 @@ avl_reversevertexorder(const int geometry; const int primnum)
     }
 }
 
-#endif
+#endif  // _AVL_REVERSEVERTEXORDER_H_

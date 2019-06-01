@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_getbbox_volume_
-#define _avl_getbbox_volume_
+#ifndef _AVL_GETBBOX_VOLUME_H_
+#define _AVL_GETBBOX_VOLUME_H_
 
 float
 avl_getbbox_volume(const int geometry)
@@ -26,4 +26,4 @@ avl_getbbox_volume(const string geometry; const string primgroup)
     return product(vector(getbbox_size(geometry, primgroup)));
 }
 
-#endif
+#endif  // _AVL_GETBBOX_VOLUME_H_

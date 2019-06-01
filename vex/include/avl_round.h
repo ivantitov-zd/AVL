@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_round_
-#define _avl_round_
+#ifndef _AVL_ROUND_H_
+#define _AVL_ROUND_H_
 
 float
 avl_round(const float value; const int ndigits)
@@ -87,4 +87,4 @@ avl_round(const vector4 values[]; const int ndigits)
     return newValues;
 }
 
-#endif
+#endif  // _AVL_ROUND_H_

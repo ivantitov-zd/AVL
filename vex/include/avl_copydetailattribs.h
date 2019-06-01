@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copydetailattribs_
-#define _avl_copydetailattribs_
+#ifndef _AVL_COPYDETAILATTRIBS_H_
+#define _AVL_COPYDETAILATTRIBS_H_
 
 #include "avl_detailattribs.h"
 #include "avl_copydetailattrib.h"
@@ -27,4 +27,4 @@ avl_copydetailattribs(const int srcGeometry;
             avl_copydetailattrib(srcGeometry, dstGeometry, attribName, mode);
 }
 
-#endif
+#endif  // _AVL_COPYDETAILATTRIBS_H_

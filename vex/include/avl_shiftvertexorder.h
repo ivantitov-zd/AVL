@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_shiftvertexorder_
-#define _avl_shiftvertexorder_
+#ifndef _AVL_SHIFTVERTEXORDER_H_
+#define _AVL_SHIFTVERTEXORDER_H_
 
 void
 avl_shiftvertexorder(const int geometry;
@@ -8,7 +8,7 @@ avl_shiftvertexorder(const int geometry;
                      const int shift)
 {
     int vertexCount = primvertexcount(geometry, primnum);
-    int index;  // stores linear vertex index and point number
+    int index;  // Stores linear vertex index and point number
     for (int vtxnum = 0; vtxnum < vertexCount; ++vtxnum)
     {
         index = vertexindex(geometry, primnum, (vtxnum - shift) % vertexCount);
@@ -17,4 +17,4 @@ avl_shiftvertexorder(const int geometry;
     }
 }
 
-#endif
+#endif  // _AVL_SHIFTVERTEXORDER_H_

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_isodd_
-#define _avl_isodd_
+#ifndef _AVL_ISODD_H_
+#define _AVL_ISODD_H_
 
 int
 avl_isodd(const int value)
@@ -8,4 +8,4 @@ avl_isodd(const int value)
     return value & 1;
 }
 
-#endif
+#endif  // _AVL_ISODD_H_

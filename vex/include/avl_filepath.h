@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_filepath_
-#define _avl_filepath_
+#ifndef _AVL_FILEPATH_H_
+#define _AVL_FILEPATH_H_
 
 #include "avl_splitext.h"
 
@@ -45,4 +45,4 @@ struct avl_filepath
     }
 }
 
-#endif
+#endif  // _AVL_FILEPATH_H_

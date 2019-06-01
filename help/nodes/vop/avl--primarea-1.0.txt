@@ -1,0 +1,15 @@
+#type: node
+#context: vop
+#namespace: avl
+#internal: primarea
+#version: 1.0
+#icon: SOP/measure
+#tags: avl
+
+= Primitive Area AVL =
+
+"""Returns the area of the primitive."""
+
+If the operation fails, the result is 0.
+
+[Include:_avl_common#not_std_lib]

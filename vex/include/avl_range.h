@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_range_
-#define _avl_range_
+#ifndef _AVL_RANGE_H_
+#define _AVL_RANGE_H_
 
 float[]
 avl_range(const float start;
@@ -80,4 +80,4 @@ avl_range(const int end)
     return avl_range(0, end, 1);
 }
 
-#endif
+#endif  // _AVL_RANGE_H_

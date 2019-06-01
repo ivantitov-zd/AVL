@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_primperimeter_
-#define _avl_primperimeter_
+#ifndef _AVL_PRIMPERIMETER_H_
+#define _AVL_PRIMPERIMETER_H_
 
 float
 avl_primperimeter(const int geometry; const int primnum)
@@ -14,4 +14,4 @@ avl_primperimeter(const string geometry; const int primnum)
     return primintrinsic(geometry, 'measuredperimeter', primnum);
 }
 
-#endif
+#endif  // _AVL_PRIMPERIMETER_H_

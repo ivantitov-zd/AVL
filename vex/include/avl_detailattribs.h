@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_detailattribs_
-#define _avl_detailattribs_
+#ifndef _AVL_DETAILATTRIBS_H_
+#define _AVL_DETAILATTRIBS_H_
 
 string[]
 avl_detailattribs(const int geometry)
@@ -14,4 +14,4 @@ avl_detailattribs(const string geometry)
     return detailintrinsic(geometry, 'detailattributes');
 }
 
-#endif
+#endif  // _AVL_DETAILATTRIBS_H_

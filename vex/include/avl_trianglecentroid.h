@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_trianglecentroid_
-#define _avl_trianglecentroid_
+#ifndef _AVL_TRIANGLECENTROID_H_
+#define _AVL_TRIANGLECENTROID_H_
 
 vector2
 avl_trianglecentroid(const vector2 vertex1;
@@ -18,4 +18,4 @@ avl_trianglecentroid(const vector vertex1;
     return (vertex1 + vertex2 + vertex3) / 3.0;
 }
 
-#endif
+#endif  // _AVL_TRIANGLECENTROID_H_

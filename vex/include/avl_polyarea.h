@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_polyarea_
-#define _avl_polyarea_
+#ifndef _AVL_POLYAREA_H_
+#define _AVL_POLYAREA_H_
 
 #include "avl_trianglearea.h"
 
@@ -55,4 +55,4 @@ avl_polyarea(const vector vertices[]; const string mode)
 
 // Todo (2.0): float avl_polyarea(const vector ...)
 
-#endif
+#endif  // _AVL_POLYAREA_H_

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_trianglenormal_
-#define _avl_trianglenormal_
+#ifndef _AVL_TRIANGLENORMAL_H_
+#define _AVL_TRIANGLENORMAL_H_
 
 vector
 avl_trianglenormal(const vector vertex1;
@@ -9,7 +9,7 @@ avl_trianglenormal(const vector vertex1;
 {
     vector edge1 = vertex1 - vertex2;
     vector edge2 = vertex3 - vertex2;
-    return cross(edge1, edge2);
+    return normalize(cross(edge1, edge2));
 }
 
-#endif
+#endif  // _AVL_TRIANGLENORMAL_H_

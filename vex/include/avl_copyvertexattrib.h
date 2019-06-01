@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copyvertexattrib_
-#define _avl_copyvertexattrib_
+#ifndef _AVL_COPYVERTEXATTRIB_H_
+#define _AVL_COPYVERTEXATTRIB_H_
 
 int
 avl_copyvertexattrib(const int srcGeometry;
@@ -102,4 +102,4 @@ avl_copyvertexattrib(const int srcGeometry;
     return success;
 }
 
-#endif
+#endif  // _AVL_COPYVERTEXATTRIB_H_

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_polycentroid_
-#define _avl_polycentroid_
+#ifndef _AVL_POLYCENTROID_H_
+#define _AVL_POLYCENTROID_H_
 
 #include "avl_trianglecentroid.h"
 #include "avl_trianglearea.h"
@@ -61,4 +61,4 @@ avl_polycentroid(const vector vertices[]; const string mode)
     }
 }
 
-#endif
+#endif  // _AVL_POLYCENTROID_H_

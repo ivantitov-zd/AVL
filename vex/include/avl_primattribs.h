@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_primattribs_
-#define _avl_primattribs_
+#ifndef _AVL_PRIMATTRIBS_H_
+#define _AVL_PRIMATTRIBS_H_
 
 string[]
 avl_primattribs(const int geometry)
@@ -14,4 +14,4 @@ avl_primattribs(const string geometry)
     return detailintrinsic(geometry, 'primitiveattributes');
 }
 
-#endif
+#endif  // _AVL_PRIMATTRIBS_H_

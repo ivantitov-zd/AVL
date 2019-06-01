@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_pointgroups_
-#define _avl_pointgroups_
+#ifndef _AVL_POINTGROUPS_H_
+#define _AVL_POINTGROUPS_H_
 
 
 string[]
@@ -15,4 +15,4 @@ avl_pointgroups(const string geometry)
     return detailintrinsic(geometry, 'pointgroups');
 }
 
-#endif
+#endif  // _AVL_POINTGROUPS_H_

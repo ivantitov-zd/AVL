@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_vertexgroups_
-#define _avl_vertexgroups_
+#ifndef _AVL_VERTEXGROUPS_H_
+#define _AVL_VERTEXGROUPS_H_
 
 string[]
 avl_vertexgroups(const int geometry)
@@ -14,4 +14,4 @@ avl_vertexgroups(const string geometry)
     return detailintrinsic(geometry, 'vertexgroups');
 }
 
-#endif
+#endif  // _AVL_VERTEXGROUPS_H_

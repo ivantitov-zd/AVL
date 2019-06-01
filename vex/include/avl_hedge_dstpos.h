@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_hedge_dstpos_
-#define _avl_hedge_dstpos_
+#ifndef _AVL_HEDGE_DSTPOS_H_
+#define _AVL_HEDGE_DSTPOS_H_
 
 float
 avl_hedge_dstpos(const int geometry; const int hedge)
@@ -14,4 +14,4 @@ avl_hedge_dstpos(const string geometry; const int hedge)
     return point(geometry, 'P', hedge_dstpoint(geometry, hedge));
 }
 
-#endif
+#endif  // _AVL_HEDGE_DSTPOS_H_

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_shift_
-#define _avl_shift_
+#ifndef _AVL_SHIFT_H_
+#define _AVL_SHIFT_H_
 
 float[]
 avl_shift(const float array[]; const int shift)
@@ -101,4 +101,4 @@ avl_shift(const matrix array[]; const int shift)
     return newArray;
 }
 
-#endif
+#endif  // _AVL_SHIFT_H_

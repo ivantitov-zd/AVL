@@ -1,7 +1,7 @@
 #pragma once
-#ifndef _avl_print_
-#define _avl_print_
+#ifndef _AVL_PRINT_H_
+#define _AVL_PRINT_H_
 
 #define avl_print(VALUE) printf('%g\n', VALUE)
 
-#endif
+#endif  // _AVL_PRINT_H_

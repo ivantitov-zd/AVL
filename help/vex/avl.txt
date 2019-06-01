@@ -1,0 +1,105 @@
+= Advanced VEX Library =
+
+#icon: NETWORKS/vop
+
+"""Functions, nodes, and tools that extend the capabilities of the VEX language."""
+
+== Overview ==
+
+=== Help ===
+
+The search box in the top right of every Houdini help page lets you search the help. You can use `!av` shortcut to search AVL docs only:
+{{{
+!av whatyouwant
+}}}
+
+=== Intergration ===
+
+Тут рассказать про присутствие в главном меню
+
+Пунктах меню на вранглах различных контекстов
+
+Пунктах на любых VOP AVL нодах для преобразования в snippet
+
+=== Roadmap ===
+
+AVL 1.0 <<(Current)>>:
+
+    Geometric and Math Functions <<(VEX, VOP+Python)>>
+
+    Pixel Wrangle COP2 (Preview) <<(COP2+Python)>>
+
+    VEX Shell (Preview) <<(Python+VEX)>>
+
+AVL 1.1:
+
+    Shaders and Shader Patterns <<(VEX, VOP+GLSL)>>
+
+    Pixel Wrangle COP2 (Release)
+
+    Transformation Wrangle OBJ (Preview) <<(Python)>>
+
+    VEX Shell (Release)
+
+AVL 1.2:
+
+    Transformation Wrangle OBJ (Release)
+
+    Attribute Wrangle GPU SOP (Preview) <<(Python+OpenCL)>>
+
+    VEX Optimizer (Preview) <<(Python)>>
+
+AVL 1.3:
+
+    Attribute Wrangle GPU SOP (Release)
+
+    VEX Optimizer (Release)
+
+    Deployment Tool (Preview) <<(Python)>>
+
+    VEX Code Editor (Preview) <<(Python)>>
+
+AVL 1.4:
+
+    Deployment Tool (Release)
+
+    VEX Code Editor (Release)
+
+AVL 2.0:
+
+    <<C++ HDK>>
+
+== Tools ==
+
+[VEX Shell|avl_vex_shell]
+
+[VEX Optimizer|avl_vex_optimizer]
+
+[VEX Deployment Tool|avl_deployment]
+
+[VEX Code Editor|avl_code_editor]
+
+== Nodes ==
+
+=== Wranglers ===
+
+[Attribute Wrangle GPU SOP|Node:sop/avl--attribwranglegpu-1.0]
+
+[Transformation Wrangle OBJ|Node:obj/avl--xformwrangle-1.0]
+
+[Pixel Wrangle COP2|Node:cop2/avl--pixelwrangle-1.0]
+
+=== VOPs ===
+
+:list:
+    #query: type:node context:vop tags:avl
+    #sortedby: title
+    #display: show-icons columns
+
+== Functions ==
+
+:list:
+    #query: category:vex tags:avl
+    #sortedby: title
+    #groupedby: group
+    #labels: _groups_en.ini

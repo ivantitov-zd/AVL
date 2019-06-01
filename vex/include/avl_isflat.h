@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_isflat_
-#define _avl_isflat_
+#ifndef _AVL_ISFLAT_H_
+#define _AVL_ISFLAT_H_
 
 #include "avl_isalmostequal.h"
 
@@ -48,4 +48,4 @@ avl_isflat(const string geometry; const int primnum)
     return 1;
 }
 
-#endif
+#endif  // _AVL_ISFLAT_H_

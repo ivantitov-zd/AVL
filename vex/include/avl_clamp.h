@@ -1,8 +1,8 @@
 #pragma once
-#ifndef _avl_clamp_
-#define _avl_clamp_
+#ifndef _AVL_CLAMP_H_
+#define _AVL_CLAMP_H_
 
-#define avl_clamp01(value) clamp(value, 0, 1)
-#define avl_clamp11(value) clamp(value, -1, 1)
+#define avl_clamp01(VALUE) clamp(VALUE, 0, 1)
+#define avl_clamp11(VALUE) clamp(VALUE, -1, 1)
 
-#endif
+#endif  // _AVL_CLAMP_H_

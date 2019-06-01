@@ -1,14 +1,16 @@
 #pragma once
-#ifndef _avl_median_
-#define _avl_median_
+#ifndef _AVL_MEDIAN_H_
+#define _AVL_MEDIAN_H_
+
+#include "avl_iseven.h"
 
 float
 avl_median(const float array[])
 {
     float sorted[] = sort(array);
     int arrayLength = len(sorted);
-    if ((arrayLength & 1) == 0)  // Even
-        return (sorted[(arrayLength - 1) / 2] + sorted[arrayLength / 2]) / 2.0;
+    if (avl_iseven(arrayLength))
+        return (sorted[(arrayLength - 1) / 2] + sorted[arrayLength / 2]) * 0.5;
     else
         return sorted[arrayLength / 2];
 }
@@ -18,8 +20,8 @@ avl_median(const int array[])
 {
     int sorted[] = sort(array);
     int arrayLength = len(sorted);
-    if ((arrayLength & 1) == 0)  // Even
-        return (sorted[(arrayLength - 1) / 2] + sorted[arrayLength / 2]) / 2.0;
+    if (avl_iseven(arrayLength))
+        return (sorted[(arrayLength - 1) / 2] + sorted[arrayLength / 2]) * 0.5;
     else
         return sorted[arrayLength / 2];
 }
@@ -52,4 +54,4 @@ avl_medianhigh(const int array[])
     return sorted[len(sorted) / 2];
 }
 
-#endif
+#endif  // _AVL_MEDIAN_H_

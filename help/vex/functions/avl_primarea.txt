@@ -1,0 +1,20 @@
+= avl_primarea =
+
+#type: vex
+#context: all
+#tags: avl, measure
+#group: measure
+
+"""Returns the area of the primitive."""
+
+:usage: `float avl_primarea(<geometry>, int primnum)`
+
+[Include:_common#geometry]
+
+:arg:primnum:
+    The primitive number to read the area on.
+
+:returns:
+    Returns the area of the primitive.
+
+[Include:_avl_common#not_std_lib]

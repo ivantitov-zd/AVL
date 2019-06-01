@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_getbbox_area_
-#define _avl_getbbox_area_
+#ifndef _AVL_GETBBOX_AREA_H_
+#define _AVL_GETBBOX_AREA_H_
 
 float
 avl_getbbox_area(const int geometry)
@@ -30,4 +30,4 @@ avl_getbbox_area(const string geometry; const string primgroup)
     return (size.x * size.y + size.y * size.z + size.x * size.z) * 2.0;
 }
 
-#endif
+#endif  // _AVL_GETBBOX_AREA_H_

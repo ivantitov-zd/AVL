@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copypointgroups_
-#define _avl_copypointgroups_
+#ifndef _AVL_COPYPOINTGROUPS_H_
+#define _AVL_COPYPOINTGROUPS_H_
 
 #include "avl_pointgroups.h"
 #include "avl_copypointgroup.h"
@@ -31,4 +31,4 @@ avl_copypointgroups(const int srcGeometry;
             avl_copypointgroup(srcGeometry, dstGeometry, srcPtnum, dstPtnum, groupName, mode);
 }
 
-#endif
+#endif  // _AVL_COPYPOINTGROUPS_H_

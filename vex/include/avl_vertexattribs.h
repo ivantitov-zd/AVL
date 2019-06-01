@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_vertexattribs_
-#define _avl_vertexattribs_
+#ifndef _AVL_VERTEXATTRIBS_H_
+#define _AVL_VERTEXATTRIBS_H_
 
 string[]
 avl_vertexattribs(const int geometry)
@@ -14,4 +14,4 @@ avl_vertexattribs(const string geometry)
     return detailintrinsic(geometry, 'vertexattributes');
 }
 
-#endif
+#endif  // _AVL_VERTEXATTRIBS_H_

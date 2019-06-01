@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_iseven_
-#define _avl_iseven_
+#ifndef _AVL_ISEVEN_H_
+#define _AVL_ISEVEN_H_
 
 int
 avl_iseven(const int value)
@@ -8,4 +8,4 @@ avl_iseven(const int value)
     return (value & 1) == 0;
 }
 
-#endif
+#endif  // _AVL_ISEVEN_H_

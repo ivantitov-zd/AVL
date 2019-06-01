@@ -1,0 +1,6 @@
+#type: include
+
+:warning:
+    #id: not_std_lib
+    
+    Please note that this VOP is not included in the standard Houdini library, but is part of the [Advanced VEX Library|/vex/avl].

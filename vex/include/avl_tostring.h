@@ -1,7 +1,7 @@
 #pragma once
-#ifndef _avl_tostring_
-#define _avl_tostring_
+#ifndef _AVL_TOSTRING_H_
+#define _AVL_TOSTRING_H_
 
 #define avl_tostring(VALUE) sprintf('%g', VALUE)
 
-#endif
+#endif  // _AVL_TOSTRING_H_

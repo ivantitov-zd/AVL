@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copyprimattribs_
-#define _avl_copyprimattribs_
+#ifndef _AVL_COPYPRIMATTRIBS_H_
+#define _AVL_COPYPRIMATTRIBS_H_
 
 #include "avl_primattribs.h"
 #include "avl_copyprimattrib.h"
@@ -31,4 +31,4 @@ avl_copyprimattribs(const int srcGeometry;
             avl_copyprimattrib(srcGeometry, dstGeometry, srcPrimnum, dstPrimnum, attribName, mode);
 }
 
-#endif
+#endif  // _AVL_COPYPRIMATTRIBS_H_

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_setedgegroup_
-#define _avl_setedgegroup_
+#ifndef _AVL_SETEDGEGROUP_H_
+#define _AVL_SETEDGEGROUP_H_
 
 int
 avl_setedgegroup(const int dstGeometry;
@@ -15,12 +15,12 @@ avl_setedgegroup(const int dstGeometry;
     int srcValue = inedgegroup(dstGeometry, groupName, srcEdgePoint, dstEdgePoint);
     if (mode == 'toggle')
         return setedgegroup(dstGeometry, groupName, srcEdgePoint, dstEdgePoint, 1 - srcValue);
-    if (startswith(mode, 'min'))
+    if (mode == 'min' || mode == 'minimum')
         return setedgegroup(dstGeometry, groupName, srcEdgePoint, dstEdgePoint, min(srcValue, value));
-    if (startswith(mode, 'max'))
+    if (mode == 'max' || mode == 'maximum')
         return setedgegroup(dstGeometry, groupName, srcEdgePoint, dstEdgePoint, max(srcValue, value));
-    if (startswith(mode, 'mult'))
+    if (mode == 'mult' || mode == 'multiply')
         return setedgegroup(dstGeometry, groupName, srcEdgePoint, dstEdgePoint, srcValue * value);
 }
 
-#endif
+#endif  // _AVL_SETEDGEGROUP_H_

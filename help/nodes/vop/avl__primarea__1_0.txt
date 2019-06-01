@@ -1,0 +1,12 @@
+#type: node
+#context: vop
+#namespace: avl
+#internal: primarea
+#version: 1.0
+#icon: SOP/measure
+#tags: avl
+#redirect: avl--primarea-1.0
+
+= Primitive Area AVL =
+
+[Include:avl--primarea-1.0]

@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_primvolume_
-#define _avl_primvolume_
+#ifndef _AVL_PRIMVOLUME_H_
+#define _AVL_PRIMVOLUME_H_
 
 float
 avl_primvolume(const int geometry; const int primnum)
@@ -14,4 +14,4 @@ avl_primvolume(const string geometry; const int primnum)
     return primintrinsic(geometry, 'measuredvolume', primnum);
 }
 
-#endif
+#endif  // _AVL_PRIMVOLUME_H_

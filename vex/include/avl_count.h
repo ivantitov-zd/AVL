@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_count_
-#define _avl_count_
+#ifndef _AVL_COUNT_H_
+#define _AVL_COUNT_H_
 
 int
 avl_count(const string haystack; const string needle)
@@ -163,4 +163,4 @@ avl_count(const matrix haystack[]; const matrix needle)
     return count;
 }
 
-#endif
+#endif  // _AVL_COUNT_H_

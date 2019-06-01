@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_normalizevalues_
-#define _avl_normalizevalues_
+#ifndef _AVL_NORMALIZEVALUES_H_
+#define _AVL_NORMALIZEVALUES_H_
 
 vector2
 avl_normalizevalues(const vector2 values)
@@ -42,4 +42,4 @@ avl_normalizevalues(const float values[]; const float scale)
     return newValues;
 }
 
-#endif
+#endif  // _AVL_NORMALIZEVALUES_H_

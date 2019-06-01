@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_polyneighbours_
-#define _avl_polyneighbours_
+#ifndef _AVL_POLYNEIGHBOURS_H_
+#define _AVL_POLYNEIGHBOURS_H_
 
 #include "avl_unique.h"
 
@@ -78,4 +78,4 @@ avl_polyneighbours(const string geometry;
     return primArray;
 }
 
-#endif
+#endif  // _AVL_POLYNEIGHBOURS_H_

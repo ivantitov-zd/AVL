@@ -1,14 +1,6 @@
 #pragma once
-#ifndef _avl_isinsphere_
-#define _avl_isinsphere_
-
-int
-avl_isinsphere(const vector2 position;
-               const vector2 center;
-               const float radius)
-{
-    return distance2(position, center) <= radius * radius;
-}
+#ifndef _AVL_ISINSPHERE_H_
+#define _AVL_ISINSPHERE_H_
 
 int
 avl_isinsphere(const vector position;
@@ -18,4 +10,4 @@ avl_isinsphere(const vector position;
     return distance2(position, center) <= radius * radius;
 }
 
-#endif
+#endif  // _AVL_ISINSPHERE_H_

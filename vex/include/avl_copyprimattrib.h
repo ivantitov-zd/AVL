@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copyprimattrib_
-#define _avl_copyprimattrib_
+#ifndef _AVL_COPYPRIMATTRIB_H_
+#define _AVL_COPYPRIMATTRIB_H_
 
 int
 avl_copyprimattrib(const int srcGeometry;
@@ -102,4 +102,4 @@ avl_copyprimattrib(const int srcGeometry;
     return success;
 }
 
-#endif
+#endif  // _AVL_COPYPRIMATTRIB_H_

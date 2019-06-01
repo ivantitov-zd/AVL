@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_spherevolume_
-#define _avl_spherevolume_
+#ifndef _AVL_SPHEREVOLUME_H_
+#define _AVL_SPHEREVOLUME_H_
 
 float
 avl_spherevolume(const float radius)
@@ -8,4 +8,4 @@ avl_spherevolume(const float radius)
     return 4.1887902047863909 * radius * radius * radius;
 }
 
-#endif
+#endif  // _AVL_SPHEREVOLUME_H_

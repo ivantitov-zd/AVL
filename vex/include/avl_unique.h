@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_unique_
-#define _avl_unique_
+#ifndef _AVL_UNIQUE_H_
+#define _AVL_UNIQUE_H_
 
 float[]
 avl_unique(const float array[])
@@ -101,4 +101,4 @@ avl_unique(const matrix array[])
     return newArray;
 }
 
-#endif
+#endif  // _AVL_UNIQUE_H_

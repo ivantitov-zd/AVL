@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_edgegroups_
-#define _avl_edgegroups_
+#ifndef _AVL_EDGEGROUPS_H_
+#define _AVL_EDGEGROUPS_H_
 
 string[]
 avl_edgegroups(const int geometry)
@@ -14,4 +14,4 @@ avl_edgegroups(const string geometry)
     return detailintrinsic(geometry, 'edgegroups');
 }
 
-#endif
+#endif  // _AVL_EDGEGROUPS_H_

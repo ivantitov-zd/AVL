@@ -1,10 +1,11 @@
 #pragma once
-#ifndef _avl_isinbbox_
-#define _avl_isinbbox_
+#ifndef _AVL_ISINBBOX_H_
+#define _AVL_ISINBBOX_H_
+
+// Todo (1.1): int avl_isinbbox(const vector; const vector; const vector)
 
 int
-avl_isinbbox(const int geometry;
-             const vector position)
+avl_isinbbox(const int geometry; const vector position)
 {
     vector min = getbbox_min(geometry);
     vector max = getbbox_max(geometry);
@@ -14,8 +15,7 @@ avl_isinbbox(const int geometry;
 }
 
 int
-avl_isinbbox(const string geometry;
-             const vector position)
+avl_isinbbox(const string geometry; const vector position)
 {
     vector min = getbbox_min(geometry);
     vector max = getbbox_max(geometry);
@@ -48,4 +48,4 @@ avl_isinbbox(const string geometry;
            position.z > min.z && position.z < max.z;
 }
 
-#endif
+#endif  // _AVL_ISINBBOX_H_

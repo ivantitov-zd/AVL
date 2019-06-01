@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copypointattribs_
-#define _avl_copypointattribs_
+#ifndef _AVL_COPYPOINTATTRIBS_H_
+#define _AVL_COPYPOINTATTRIBS_H_
 
 #include "avl_pointattribs.h"
 #include "avl_copypointattrib.h"
@@ -31,4 +31,4 @@ avl_copypointattribs(const int srcGeometry;
             avl_copypointattrib(srcGeometry, dstGeometry, srcPtnum, dstPtnum, attribName, mode);
 }
 
-#endif
+#endif  // _AVL_COPYPOINTATTRIBS_H_

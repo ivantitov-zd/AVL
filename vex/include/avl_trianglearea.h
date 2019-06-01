@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_trianglearea_
-#define _avl_trianglearea_
+#ifndef _AVL_TRIANGLEAREA_H_
+#define _AVL_TRIANGLEAREA_H_
 
 float
 avl_trianglearea(const vector2 vertex1;
@@ -40,4 +40,4 @@ avl_trianglearea(const vector vertices[])
     return length(cross(edge1, edge2)) * 0.5;
 }
 
-#endif
+#endif  // _AVL_TRIANGLEAREA_H_

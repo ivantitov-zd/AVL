@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copyvertexgroup_
-#define _avl_copyvertexgroup_
+#ifndef _AVL_COPYVERTEXGROUP_H_
+#define _AVL_COPYVERTEXGROUP_H_
 
 int
 avl_copyvertexgroup(const int srcGeometry;
@@ -14,4 +14,4 @@ avl_copyvertexgroup(const int srcGeometry;
     return setvertexgroup(dstGeometry, groupName, dstVtxnum, -1, value, mode);
 }
 
-#endif
+#endif  // _AVL_COPYVERTEXGROUP_H_

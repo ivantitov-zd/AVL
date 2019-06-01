@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_copypointattrib_
-#define _avl_copypointattrib_
+#ifndef _AVL_COPYPOINTATTRIB_H_
+#define _AVL_COPYPOINTATTRIB_H_
 
 int
 avl_copypointattrib(const int srcGeometry;
@@ -102,4 +102,4 @@ avl_copypointattrib(const int srcGeometry;
     return success;
 }
 
-#endif
+#endif  // _AVL_COPYPOINTATTRIB_H_

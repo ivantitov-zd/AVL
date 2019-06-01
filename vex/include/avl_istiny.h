@@ -1,6 +1,6 @@
 #pragma once
-#ifndef _avl_istiny_
-#define _avl_istiny_
+#ifndef _AVL_ISTINY_H_
+#define _AVL_ISTINY_H_
 
 int
 avl_istiny(const int geometry;
@@ -36,4 +36,4 @@ avl_istiny(const string geometry;
     return 0;
 }
 
-#endif
+#endif  // _AVL_ISTINY_H_
