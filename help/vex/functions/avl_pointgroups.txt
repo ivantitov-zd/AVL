@@ -1,0 +1,17 @@
+= avl_pointgroups =
+
+#type: vex
+#context: all
+#tags: groups, avl
+#group: groups
+
+"""Returns a list of point groups."""
+
+:usage: `string[] avl_pointgroups(<geometry>)`
+
+[Include:_common#geometry]
+
+:returns:
+    Returns a list of point groups.
+
+[Include:_avl_common#not_std_lib]

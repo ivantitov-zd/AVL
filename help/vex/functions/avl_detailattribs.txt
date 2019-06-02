@@ -1,0 +1,17 @@
+= avl_detailattribs =
+
+#type: vex
+#context: all
+#tags: attrib, avl
+#group: attrib
+
+"""Returns a list of detail attributes."""
+
+:usage: `string[] avl_detailattribs(<geometry>)`
+
+[Include:_common#geometry]
+
+:returns:
+    Returns a list of detail attributes.
+
+[Include:_avl_common#not_std_lib]

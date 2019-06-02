@@ -102,4 +102,4 @@ AVL 2.0:
     #query: category:vex tags:avl
     #sortedby: title
     #groupedby: group
-    #labels: _groups_en.ini
+    #labels: functions/_groups_en.ini

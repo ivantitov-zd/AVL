@@ -1,0 +1,17 @@
+= avl_pointattribs =
+
+#type: vex
+#context: all
+#tags: attrib, avl
+#group: attrib
+
+"""Returns a list of point attributes."""
+
+:usage: `string[] avl_pointattribs(<geometry>)`
+
+[Include:_common#geometry]
+
+:returns:
+    Returns a list of point attributes.
+
+[Include:_avl_common#not_std_lib]

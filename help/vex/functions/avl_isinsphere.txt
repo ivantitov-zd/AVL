@@ -1,0 +1,24 @@
+= avl_isinsphere =
+
+#type: vex
+#context: all
+#tags: measure, proximity, avl
+#group: geo
+
+"""Checks if the given position is inside the given sphere."""
+
+:usage: `int avl_isinsphere(vector position, vector center, float radius)`
+
+:arg:position:
+    Position to check.
+
+:arg:center:
+    Center of the given sphere.
+
+:arg:radius:
+    Radius of the given sphere.
+
+:returns:
+    Returns 1 if the `position` is inside a sphere with given `center` and `radius` or 0 otherwise.
+
+[Include:_avl_common#not_std_lib]

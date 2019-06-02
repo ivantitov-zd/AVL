@@ -1,0 +1,20 @@
+= avl_isinside =
+
+#type: vex
+#context: all
+#tags: measure, proximity, avl
+#group: geo
+
+"""Checks if the given position is inside the given geometry."""
+
+:usage: `int avl_isinside(<geometry>, vector position)`
+
+[Include:_common#geometry]
+
+:arg:position:
+    Position to check.
+
+:returns:
+    Returns 1 if the `position` is inside a `geometry` or 0 otherwise.
+
+[Include:_avl_common#not_std_lib]

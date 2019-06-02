@@ -1,0 +1,22 @@
+= avl_angle =
+
+#type: vex
+#context: all
+#tags: vector, avl
+#group: math
+
+"""Returns the angle formed between the two vectors."""
+
+:usage: `float avl_angle(vector2 vec1, vector2 vec2)`
+:usage: `float avl_angle(vector vec1, vector vec2)`
+
+:arg:vec1:
+    First vector.
+
+:arg:vec2:
+    Second vector.
+
+:returns:
+    Returns the angle formed between the two vectors `vec1` and `vec2`.
+
+[Include:_avl_common#not_std_lib]

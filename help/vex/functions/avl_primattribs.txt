@@ -1,0 +1,17 @@
+= avl_primattribs =
+
+#type: vex
+#context: all
+#tags: attrib, avl
+#group: attrib
+
+"""Returns a list of primitive attributes."""
+
+:usage: `string[] avl_primattribs(<geometry>)`
+
+[Include:_common#geometry]
+
+:returns:
+    Returns a list of primitive attributes.
+
+[Include:_avl_common#not_std_lib]

@@ -1,0 +1,27 @@
+= avl_round =
+
+#type: vex
+#context: all
+#tags: avl, math, number
+#group: math
+
+"""Rounds the number to the given precision."""
+
+:usage: `int avl_round(int value, int ndigits)`
+:usage: `float avl_round(float value, int ndigits)`
+:usage: `<vector> avl_round(<vector> value, int ndigits)`
+
+For vectors, this is done per-component.
+
+:usage: `<type>[] avl_round(<type> values[], int ndigits)`
+
+:arg:value(s):
+    The value(s) to round.
+
+:arg:ndigits:
+    Target precision.
+
+:returns:
+    Returns the `value` rounded to `ndigits` precision before/after the decimal point.
+
+[Include:_avl_common#not_std_lib]

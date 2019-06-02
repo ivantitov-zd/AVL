@@ -1,0 +1,24 @@
+= avl_polyneighbours =
+
+#type: vex
+#context: all
+#tags: prim, proximity, avl
+#group: geo
+
+"""Returns an array of primitive numbers of polygons that share an edge or points with this polygon."""
+
+:usage: `int[] avl_polyneighbours(<geometry>, int primnum)`
+:usage: `int[] avl_polyneighbours(<geometry>, int primnum, int byPoints)`
+
+[Include:_common#geometry]
+
+:arg:primnum:
+    The primitive number.
+
+:arg:byPoints:
+    <<Mode>>.
+
+:returns:
+    Returns an array of primitive numbers of polygons that share an edge or points with this polygon.
+
+[Include:_avl_common#not_std_lib]

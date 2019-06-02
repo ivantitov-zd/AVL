@@ -1,0 +1,18 @@
+= avl_median =
+
+#type: vex
+#context: all
+#tags: array, math, avl
+#group: array
+
+"""Returns the median (middle value) of numeric data, using the common “mean of middle two” method."""
+
+:usage: `float avl_median(float array[])`
+
+:arg:array:
+    Array with values.
+
+:returns:
+    Returns the median (middle value) of numeric data, using the common “mean of middle two” method.
+
+[Include:_avl_common#not_std_lib]

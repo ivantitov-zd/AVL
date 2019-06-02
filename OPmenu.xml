@@ -2,7 +2,7 @@
 <menuDocument>
     <menu>
 
-        <addScriptItem id="avl_save_as_snippet">
+<!--         <addScriptItem id="avl_save_as_snippet">
             <label>as Snippet (AVL)...</label>
             <parent>opmenu.save_menu</parent>
             <insertBefore/>
@@ -15,9 +15,9 @@
                     return 'wrangle' in node.type().name().lower()
                 </expression>
             </context>
-        </addScriptItem>
+        </addScriptItem> -->
 
-        <addScriptItem id="avl_edit">
+<!--         <addScriptItem id="avl_edit">
             <label>Open in VEX Editor (AVL)...</label>
             <parent>root_menu</parent>
             <insertAfter>opmenu.save_menu</insertAfter>
@@ -30,9 +30,9 @@
                     return 'wrangle' in node.type().name().lower()
                 </expression>
             </context>
-        </addScriptItem>
+        </addScriptItem> -->
 
-        <addScriptItem id="avl_optimize">
+<!--         <addScriptItem id="avl_optimize">
             <label>Optimize VEX Code (AVL)...</label>
             <parent>root_menu</parent>
             <insertAfter>avl_edit</insertAfter>
@@ -45,7 +45,37 @@
                     return 'wrangle' in node.type().name().lower()
                 </expression>
             </context>
-        </addScriptItem>
+        </addScriptItem> -->
+
+<!--         <addScriptItem id="avl_deploy">
+            <label>Deploy AVL Code (AVL)...</label>
+            <parent>root_menu</parent>
+            <insertAfter>avl_optimize</insertAfter>
+            <context>
+                <networkCategory>Object,Sop,Dop,Cop2</networkCategory>
+                <expression>
+                    node = kwargs.get('node', None)
+                    if node is None:
+                        return False
+                    return 'wrangle' in node.type().name().lower()
+                </expression>
+            </context>
+        </addScriptItem> -->
+
+<!--         <addScriptItem id="avl_convert_to_snippet">
+            <label>Convert to Snippet (AVL)</label>
+            <parent>root_menu</parent>
+            <insertAfter>opmenu.vop_options_menu</insertAfter>
+            <context>
+                <networkCategory>Vop</networkCategory>
+                <expression>
+                    node = kwargs.get('node', None)
+                    if node is None:
+                        return False
+                    return node.type().nameComponents()[1] == 'avl'
+                </expression>
+            </context>
+        </addScriptItem> -->
 
     </menu>
 </menuDocument>

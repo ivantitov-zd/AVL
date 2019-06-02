@@ -2,7 +2,7 @@
 
 #type: vex
 #context: all
-#tags: avl, measure
+#tags: measure, avl
 #group: measure
 
 """Returns the area of the primitive."""

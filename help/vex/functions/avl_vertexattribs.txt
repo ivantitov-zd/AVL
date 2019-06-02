@@ -1,0 +1,17 @@
+= avl_vertexattribs =
+
+#type: vex
+#context: all
+#tags: attrib, avl
+#group: attrib
+
+"""Returns a list of vertex attributes."""
+
+:usage: `string[] avl_vertexattribs(<geometry>)`
+
+[Include:_common#geometry]
+
+:returns:
+    Returns a list of vertex attributes.
+
+[Include:_avl_common#not_std_lib]

@@ -15,7 +15,7 @@ avl_tests()
     // avl_padzero
     assert(avl_padzero(32, 4) == '0032');
     assert(avl_padzero(0, 4) ==  '0000');
-    assert(avl_padzero(32, 1) == '32g');
+    assert(avl_padzero(32, 1) == '32');
 
     // avl_isinsphere
     assert(avl_isinsphere({0.5, 0.5, 1}, {0, 0, 0}, 2) == 1);

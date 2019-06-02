@@ -1,0 +1,18 @@
+= avl_unique =
+
+#type: vex
+#context: all
+#tags: array, avl
+#group: array
+
+"""Removes all but first element from every consecutive group of equivalent elements in an array."""
+
+:usage: `<type>[] avl_unique(<type> array[])`
+
+:arg:array:
+    Array with values.
+
+:returns:
+    Returns the new array without successive repetitions of elements.
+
+[Include:_avl_common#not_std_lib]

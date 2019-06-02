@@ -1,0 +1,20 @@
+= avl_primvolume =
+
+#type: vex
+#context: all
+#tags: measure, avl
+#group: measure
+
+"""Returns the volume of the primitive."""
+
+:usage: `float avl_primvolume(<geometry>, int primnum)`
+
+[Include:_common#geometry]
+
+:arg:primnum:
+    The primitive number to read the volume on.
+
+:returns:
+    Returns the volume of the primitive.
+
+[Include:_avl_common#not_std_lib]

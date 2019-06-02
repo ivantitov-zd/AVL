@@ -1,0 +1,21 @@
+= avl_padzero =
+
+#type: vex
+#context: all
+#tags: string, avl
+#group: string
+
+"""Pads a value with zeros to make up given length."""
+
+:usage: `string avl_padzero(int value, int size)`
+
+:arg:value:
+    Integer value.
+
+:arg:size:
+    Target length.
+
+:returns:
+    Returns a string containing `value` preceded by enough zeros to make up `size` digits.
+
+[Include:_avl_common#not_std_lib]

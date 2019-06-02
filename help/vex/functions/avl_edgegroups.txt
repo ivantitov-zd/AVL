@@ -1,0 +1,17 @@
+= avl_edgegroups =
+
+#type: vex
+#context: all
+#tags: groups, avl
+#group: groups
+
+"""Returns a list of edge groups."""
+
+:usage: `string[] avl_edgegroups(<geometry>)`
+
+[Include:_common#geometry]
+
+:returns:
+    Returns a list of edge groups.
+
+[Include:_avl_common#not_std_lib]

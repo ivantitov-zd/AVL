@@ -1,0 +1,18 @@
+= avl_shift =
+
+#type: vex
+#context: all
+#tags: array, avl
+#group: array
+
+"""Shifts array elements by n positions."""
+
+:usage: `<type>[] avl_shift(<type> array[])`
+
+:arg:array:
+    Array with values.
+
+:returns:
+    Returns the new array with shifted elements.
+
+[Include:_avl_common#not_std_lib]

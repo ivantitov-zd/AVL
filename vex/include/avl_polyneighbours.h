@@ -42,6 +42,13 @@ avl_polyneighbours(const int geometry;
 }
 
 int[]
+avl_polyneighbours(const int geometry;
+                   const int primnum)
+{
+    return avl_polyneighbours(geometry, primnum, 1);
+}
+
+int[]
 avl_polyneighbours(const string geometry;
                    const int primnum;
                    const int byPoints)
@@ -76,6 +83,13 @@ avl_polyneighbours(const string geometry;
         removevalue(primArray, primnum);
     }
     return primArray;
+}
+
+int[]
+avl_polyneighbours(const string geometry;
+                   const int primnum)
+{
+    return avl_polyneighbours(geometry, primnum, 1);
 }
 
 #endif  // _AVL_POLYNEIGHBOURS_H_

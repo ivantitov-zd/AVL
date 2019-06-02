@@ -1,0 +1,20 @@
+= avl_primperimeter =
+
+#type: vex
+#context: all
+#tags: measure, avl
+#group: measure
+
+"""Returns the perimeter of the primitive."""
+
+:usage: `float avl_primperimeter(<geometry>, int primnum)`
+
+[Include:_common#geometry]
+
+:arg:primnum:
+    The primitive number to read the perimeter on.
+
+:returns:
+    Returns the perimeter of the primitive.
+
+[Include:_avl_common#not_std_lib]

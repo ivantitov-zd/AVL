@@ -3,75 +3,75 @@
 #define _AVL_SWAP_H_
 
 void
-avl_swap(export float value1; export float value2)
+avl_swap(export float variable1; export float variable2)
 {
-    float temp = value1;
-    value1 = value2;
-    value2 = temp;
+    float temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export int value1; export int value2)
+avl_swap(export int variable1; export int variable2)
 {
-    int temp = value1;
-    value1 = value2;
-    value2 = temp;
+    int temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export string value1; export string value2)
+avl_swap(export string variable1; export string variable2)
 {
-    string temp = value1;
-    value1 = value2;
-    value2 = temp;
+    string temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export vector2 value1; export vector2 value2)
+avl_swap(export vector2 variable1; export vector2 variable2)
 {
-    vector2 temp = value1;
-    value1 = value2;
-    value2 = temp;
+    vector2 temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export vector value1; export vector value2)
+avl_swap(export vector variable1; export vector variable2)
 {
-    vector temp = value1;
-    value1 = value2;
-    value2 = temp;
+    vector temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export vector4 value1; export vector4 value2)
+avl_swap(export vector4 variable1; export vector4 variable2)
 {
-    vector4 temp = value1;
-    value1 = value2;
-    value2 = temp;
+    vector4 temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export matrix2 value1; export matrix2 value2)
+avl_swap(export matrix2 variable1; export matrix2 variable2)
 {
-    matrix2 temp = value1;
-    value1 = value2;
-    value2 = temp;
+    matrix2 temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export matrix3 value1; export matrix3 value2)
+avl_swap(export matrix3 variable1; export matrix3 variable2)
 {
-    matrix3 temp = value1;
-    value1 = value2;
-    value2 = temp;
+    matrix3 temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 void
-avl_swap(export matrix value1; export matrix value2)
+avl_swap(export matrix variable1; export matrix variable2)
 {
-    matrix temp = value1;
-    value1 = value2;
-    value2 = temp;
+    matrix temp = variable1;
+    variable1 = variable2;
+    variable2 = temp;
 }
 
 #endif  // _AVL_SWAP_H_

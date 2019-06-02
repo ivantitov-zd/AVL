@@ -1,0 +1,18 @@
+= avl_print =
+
+#type: vex
+#context: all
+#tags: string, utility, print, avl
+#group: utility
+
+"""Simply prints a single value of any type."""
+
+:usage: `void avl_print(<type> value)`
+:usage: `void avl_print(<type> value[])`
+
+[Include:_common#geometry]
+
+:arg:value:
+    Value to print.
+
+[Include:_avl_common#not_std_lib]

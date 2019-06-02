@@ -1,0 +1,17 @@
+= avl_vertexgroups =
+
+#type: vex
+#context: all
+#tags: groups, avl
+#group: groups
+
+"""Returns a list of vertex groups."""
+
+:usage: `string[] avl_vertexgroups(<geometry>)`
+
+[Include:_common#geometry]
+
+:returns:
+    Returns a list of vertex groups.
+
+[Include:_avl_common#not_std_lib]

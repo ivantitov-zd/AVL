@@ -2,31 +2,31 @@
 #ifndef _AVL_H_
 #define _AVL_H_
 
-#include "avl_primarea.h"
-#include "avl_primperimeter.h"
-#include "avl_primvolume.h"
-#include "avl_round.h"
-#include "avl_swap.h"
-#include "avl_angle.h"
-#include "avl_unique.h"
-#include "avl_median.h"
-#include "avl_clamp.h"
-#include "avl_shift.h"
-#include "avl_polyneighbours.h"
-#include "avl_pointattribs.h"
-#include "avl_vertexattribs.h"
-#include "avl_primattribs.h"
-#include "avl_detailattribs.h"
-#include "avl_pointgroups.h"
-#include "avl_vertexgroups.h"
-#include "avl_primgroups.h"
-#include "avl_edgegroups.h"
-#include "avl_padzero.h"
-#include "avl_isinside.h"
-#include "avl_print.h"
+#include "avl_primarea.h" // doc
+#include "avl_primperimeter.h" // doc
+#include "avl_primvolume.h" // doc
+#include "avl_round.h" // doc
+#include "avl_swap.h" // doc
+#include "avl_angle.h" // doc
+#include "avl_unique.h" // doc
+#include "avl_median.h" // doc
+#include "avl_clamp.h"  // Todo: functions + split
+#include "avl_shift.h" // doc
+#include "avl_polyneighbours.h" // doc
+#include "avl_pointattribs.h" // doc
+#include "avl_vertexattribs.h" // doc
+#include "avl_primattribs.h" // doc
+#include "avl_detailattribs.h" // doc
+#include "avl_pointgroups.h" // doc
+#include "avl_vertexgroups.h" // doc
+#include "avl_primgroups.h" // doc
+#include "avl_edgegroups.h" // doc
+#include "avl_padzero.h" // doc
+#include "avl_isinside.h" // doc
+#include "avl_print.h" // doc
 #include "avl_trianglearea.h"
 #include "avl_trianglenormal.h"
-#include "avl_isinsphere.h"
+#include "avl_isinsphere.h" // doc
 #include "avl_range.h"
 #include "avl_hedge_srcpos.h"
 #include "avl_hedge_dstpos.h"
@@ -101,13 +101,14 @@
 //#include "avl_rawgroupbyrange.h"
 //#include "avl_selectloop.h"
 //#include "avl_selectring.h"
-#include "avl_polyarea.h"              2d
+#include "avl_polyarea.h" // 2d
 //#include "avl_polyvolume.h"
-#include "avl_polycentroid.h"           2d
+#include "avl_polycentroid.h" // 2d
 //#include "avl_primcentroid.h"
-//#include "avl_polyperimeter.h"            2d
-//#include "avl_triangleperimeter.h"             2d
+//#include "avl_polyperimeter.h" // 2d
+//#include "avl_triangleperimeter.h" // 2d
 //#include "avl_trianglevolume.h"
 //#include "avl_bfind.h"
+#include "avl_limits.h" // double ??
 
 #endif  // _AVL_H_

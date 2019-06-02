@@ -1,0 +1,21 @@
+= avl_swap =
+
+#type: vex
+#context: all
+#tags: utility, avl
+#group: utility
+
+"""Exchanges the values of two variables."""
+
+:usage: `void avl_swap(<type> &variable1, <type> &variable2)`
+:usage: `void avl_swap(<type>[] &variable1, <type>[] &variable2)`
+
+Exchanges the values of `variable1` and `variable2`.
+
+:arg:variable1:
+    First variable.
+
+:arg:variable2:
+    Second variable.
+
+[Include:_avl_common#not_std_lib]
