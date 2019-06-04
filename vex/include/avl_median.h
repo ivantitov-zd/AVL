@@ -5,25 +5,25 @@
 #include "avl_iseven.h"
 
 float
-avl_median(const float array[])
+avl_median(const float sequence[])
 {
-    float sorted[] = sort(array);
-    int arrayLength = len(sorted);
-    if (avl_iseven(arrayLength))
-        return (sorted[(arrayLength - 1) / 2] + sorted[arrayLength / 2]) * 0.5;
+    float sorted[] = sort(sequence);
+    int sequenceLength = len(sorted);
+    if (avl_iseven(sequenceLength))
+        return (sorted[(sequenceLength - 1) / 2] + sorted[sequenceLength / 2]) * 0.5;
     else
-        return sorted[arrayLength / 2];
+        return sorted[sequenceLength / 2];
 }
 
 float
-avl_median(const int array[])
+avl_median(const int sequence[])
 {
-    int sorted[] = sort(array);
-    int arrayLength = len(sorted);
-    if (avl_iseven(arrayLength))
-        return (sorted[(arrayLength - 1) / 2] + sorted[arrayLength / 2]) * 0.5;
+    int sorted[] = sort(sequence);
+    int sequenceLength = len(sorted);
+    if (avl_iseven(sequenceLength))
+        return (sorted[(sequenceLength - 1) / 2] + sorted[sequenceLength / 2]) * 0.5;
     else
-        return sorted[arrayLength / 2];
+        return sorted[sequenceLength / 2];
 }
 
 // Todo (2.0): float avl_median(const float; const float; const float ...)
@@ -31,16 +31,16 @@ avl_median(const int array[])
 // Todo (2.0): float avl_median(const int; const int; const int ...)
 
 float
-avl_medianlow(const float array[])
+avl_medianlow(const float sequence[])
 {
-    float sorted[] = sort(array);
+    float sorted[] = sort(sequence);
     return sorted[(len(sorted) - 1) / 2];
 }
 
 int
-avl_medianlow(const int array[])
+avl_medianlow(const int sequence[])
 {
-    int sorted[] = sort(array);
+    int sorted[] = sort(sequence);
     return sorted[(len(sorted) - 1) / 2];
 }
 
@@ -49,16 +49,16 @@ avl_medianlow(const int array[])
 // Todo (2.0): int avl_medianlow(const int; const int; const int ...)
 
 float
-avl_medianhigh(const float array[])
+avl_medianhigh(const float sequence[])
 {
-    float sorted[] = sort(array);
+    float sorted[] = sort(sequence);
     return sorted[len(sorted) / 2];
 }
 
 int
-avl_medianhigh(const int array[])
+avl_medianhigh(const int sequence[])
 {
-    int sorted[] = sort(array);
+    int sorted[] = sort(sequence);
     return sorted[len(sorted) / 2];
 }
 

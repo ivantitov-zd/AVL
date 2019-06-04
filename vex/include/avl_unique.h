@@ -3,102 +3,102 @@
 #define _AVL_UNIQUE_H_
 
 float[]
-avl_unique(const float array[])
+avl_unique(const float sequence[])
 {
-    float newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    float newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 int[]
-avl_unique(const int array[])
+avl_unique(const int sequence[])
 {
-    int newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    int newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 string[]
-avl_unique(const string array[])
+avl_unique(const string sequence[])
 {
-    string newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    string newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 vector2[]
-avl_unique(const vector2 array[])
+avl_unique(const vector2 sequence[])
 {
-    vector2 newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    vector2 newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 vector[]
-avl_unique(const vector array[])
+avl_unique(const vector sequence[])
 {
-    vector newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    vector newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 vector4[]
-avl_unique(const vector4 array[])
+avl_unique(const vector4 sequence[])
 {
-    vector4 newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    vector4 newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 matrix2[]
-avl_unique(const matrix2 array[])
+avl_unique(const matrix2 sequence[])
 {
-    matrix2 newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    matrix2 newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 matrix3[]
-avl_unique(const matrix3 array[])
+avl_unique(const matrix3 sequence[])
 {
-    matrix3 newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    matrix3 newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 matrix[]
-avl_unique(const matrix array[])
+avl_unique(const matrix sequence[])
 {
-    matrix newArray[];
-    append(newArray, array[0]);
-    for (int i = 1; i < len(array); ++i)
-        if (array[i] != array[i-1])
-            append(newArray, array[i]);
-    return newArray;
+    matrix newSequence[];
+    append(newSequence, sequence[0]);
+    for (int i = 1; i < len(sequence); ++i)
+        if (sequence[i] != sequence[i-1])
+            append(newSequence, sequence[i]);
+    return newSequence;
 }
 
 #endif  // _AVL_UNIQUE_H_

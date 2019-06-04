@@ -4,25 +4,28 @@
 
         <!-- ========================= Window Menu ========================= -->
 
-        <addScriptItem id="h.avl_shell">
+<!--         <addScriptItem id="h.avl_vex_shell">
             <label>VEX Shell (AVL)</label>
             <parent>windows_menu</parent>
             <insertAfter>h.python_panel_editor</insertAfter>
-            <scriptPath>$HOME/scripts/generic_script.py</scriptPath>
-        </addScriptItem>
-
-<!--         <addScriptItem id="h.avl_editor">
-            <label>VEX Code Editor (AVL)</label>
-            <parent>windows_menu</parent>
-            <insertAfter>h.avl_shell</insertAfter>
-            <scriptPath>$HOME/scripts/generic_script.py</scriptPath>
+            <scriptCode>
+            </scriptCode>
         </addScriptItem> -->
 
-<!--         <addScriptItem id="h.avl_snippets">
+<!--         <addScriptItem id="h.avl_vex_editor">
+            <label>VEX Code Editor (AVL)</label>
+            <parent>windows_menu</parent>
+            <insertAfter>h.avl_vex_shell</insertAfter>
+            <scriptCode>
+            </scriptCode>
+        </addScriptItem> -->
+
+<!--         <addScriptItem id="h.avl_vex_snippets">
             <label>VEX Snippets (AVL)</label>
             <parent>windows_menu</parent>
-            <insertAfter>h.avl_editor</insertAfter>
-            <scriptPath>$HOME/scripts/generic_script.py</scriptPath>
+            <insertAfter>h.avl_vex_editor</insertAfter>
+            <scriptCode>
+            </scriptCode>
         </addScriptItem> -->
 
         <!-- ================== Advanced VEX Library Menu ================== -->
@@ -30,55 +33,71 @@
         <subMenu id="h.avl">
             <label>Advanced VEX Library</label>
 
-            <scriptItem id="h.avl.shell">
+<!--             <scriptItem id="h.avl.shell">
                 <label>VEX Shell</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
-            </scriptItem>
+                <scriptCode>
+                </scriptCode>
+            </scriptItem> -->
 
 <!--             <scriptItem id="h.avl.editor">
                 <label>VEX Code Editor</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
+                <scriptCode>
+                </scriptCode>
             </scriptItem> -->
 
 <!--             <scriptItem id="h.avl.snippets">
                 <label>VEX Snippets</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
+                <scriptCode>
+                </scriptCode>
             </scriptItem> -->
 
             <separatorItem/>
 
 <!--             <scriptItem id="h.avl.optimize">
                 <label>Optimize</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
+                <scriptCode>
+                </scriptCode>
             </scriptItem> -->
 
 <!--             <scriptItem id="h.avl.deploy">
                 <label>Deploy</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
+                <scriptCode>
+                </scriptCode>
             </scriptItem> -->
 
             <separatorItem/>
 
             <scriptItem id="h.avl.repository">
                 <label>GitHub</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
+                <scriptCode>
+import webbrowser
+
+repoURL = 'https://github.com/AdvancedVEXLibrary/Advanced-VEX-Library'
+webbrowser.open_new_tab(repoURL)
+                </scriptCode>
             </scriptItem>
 
-            <scriptItem id="h.avl.help_online">
+<!--             <scriptItem id="h.avl.help_online">
                 <label>Online Help</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
-            </scriptItem>
+                <scriptCode>
+                </scriptCode>
+            </scriptItem> -->
 
-            <scriptItem id="h.avl.update">
+<!--             <scriptItem id="h.avl.update">
                 <label>Update</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
-            </scriptItem>
+                <scriptCode>
+                </scriptCode>
+            </scriptItem> -->
 
             <separatorItem/>
 
             <scriptItem id="h.avl.about">
                 <label>About AVL</label>
-                <scriptPath>$HOME/scripts/first_script.py</scriptPath>
+                <scriptCode>
+from avl import version
+
+hou.ui.displayMessage('Version ' + version, title='About AVL')
+                </scriptCode>
             </scriptItem>
         </subMenu>
 

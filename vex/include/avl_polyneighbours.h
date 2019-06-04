@@ -9,7 +9,7 @@ avl_polyneighbours(const int geometry;
                    const int primnum;
                    const int byPoints)
 {
-    int primArray[];
+    int primitives[];
     if (byPoints == 0)
     {
         int startHedge = primhedge(geometry, primnum);
@@ -23,7 +23,7 @@ avl_polyneighbours(const int geometry;
                 int prim = hedge_prim(geometry, nextHedge);
                 if (prim != -1 && prim != primnum)
                 {
-                    append(primArray, prim);
+                    append(primitives, prim);
                 }
             }
             hedge = hedge_next(geometry, hedge);
@@ -33,12 +33,12 @@ avl_polyneighbours(const int geometry;
     } else {
         foreach (int pt; primpoints(geometry, primnum))
         {
-            push(primArray, pointprims(geometry, pt));
+            push(primitives, pointprims(geometry, pt));
         }
-        primArray = avl_unique(sort(primArray));
-        removevalue(primArray, primnum);
+        primitives = avl_unique(sort(primitives));
+        removevalue(primitives, primnum);
     }
-    return primArray;
+    return primitives;
 }
 
 int[]
@@ -53,7 +53,7 @@ avl_polyneighbours(const string geometry;
                    const int primnum;
                    const int byPoints)
 {
-    int primArray[];
+    int primitives[];
     if (byPoints == 0)
     {
         int startHedge = primhedge(geometry, primnum);
@@ -67,7 +67,7 @@ avl_polyneighbours(const string geometry;
                 int prim = hedge_prim(geometry, nextHedge);
                 if (prim != -1 && prim != primnum)
                 {
-                    append(primArray, prim);
+                    append(primitives, prim);
                 }
             }
             hedge = hedge_next(geometry, hedge);
@@ -77,12 +77,12 @@ avl_polyneighbours(const string geometry;
     } else {
         foreach (int pt; primpoints(geometry, primnum))
         {
-            push(primArray, pointprims(geometry, pt));
+            push(primitives, pointprims(geometry, pt));
         }
-        primArray = avl_unique(sort(primArray));
-        removevalue(primArray, primnum);
+        primitives = avl_unique(sort(primitives));
+        removevalue(primitives, primnum);
     }
-    return primArray;
+    return primitives;
 }
 
 int[]

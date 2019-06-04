@@ -7,9 +7,9 @@
 
 """Removes all but first element from every consecutive group of equivalent elements in an array."""
 
-:usage: `<type>[] avl_unique(<type> array[])`
+:usage: `<type>[] avl_unique(<type> sequence[])`
 
-:arg:array:
+:arg:sequence:
     Array with values.
 
 :returns:

@@ -6,11 +6,15 @@
 #include "avl_trianglearea.h"
 #include "avl_polyperimeter.h"
 
-/*
-corners
-edges
-areas
-*/
+// Todo: optimize
+
+// Todo (1.0): vector2 avl_polycentroid(const vector2[])
+
+// Todo (1.0): vector2 avl_polycentroid(const vector2[]; const string mode)
+
+// Todo (1.0): vector avl_polycentroid(const vector[])
+
+// Todo (2.0): vector2 avl_polycentroid(const vector2 ...)
 
 vector
 avl_polycentroid(const vector vertices[]; const string mode)
@@ -31,8 +35,7 @@ avl_polycentroid(const vector vertices[]; const string mode)
         {
             pos1 = vertices[i-1];
             pos2 = vertices[i];
-            centroid += (pos1 + pos2) / 2) *
-                        (distance2(pos1, pos2) / perimeter2);
+            centroid += ((pos1 + pos2) / 2) * (distance2(pos1, pos2) / perimeter2);
         }
         return centroid;
     } else if (mode == 'areas')
@@ -56,9 +59,11 @@ avl_polycentroid(const vector vertices[]; const string mode)
         return abs(centroid);
     } else
     {
-        error('AVL Polygon Centroid: Unknown mode ' + mode);
+        error('Polygon Centroid AVL: Unknown mode ' + mode);
         return {0.0, 0.0, 0.0};
     }
 }
+
+// Todo (2.0): vector avl_polycentroid(const vector ...)
 
 #endif  // _AVL_POLYCENTROID_H_

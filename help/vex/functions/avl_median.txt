@@ -7,9 +7,9 @@
 
 """Returns the median (middle value) of numeric data, using the common “mean of middle two” method."""
 
-:usage: `float avl_median(float array[])`
+:usage: `float avl_median(float sequence[])`
 
-:arg:array:
+:arg:sequence:
     Array with values.
 
 :returns:

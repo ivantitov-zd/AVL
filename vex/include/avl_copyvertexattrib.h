@@ -41,7 +41,7 @@ avl_copyvertexattrib(const int srcGeometry;
             success = setvertexattrib(dstGeometry, attribName, dstVtxnum, -1, value, mode);
         } else
         {
-            error('AVL Copy Attrib: Unknown size');
+            error('Copy Attribute AVL: Unknown size');
             return success;
         }
     } else if (attribType == 0)  // Integer
@@ -81,7 +81,7 @@ avl_copyvertexattrib(const int srcGeometry;
             success = setvertexattrib(dstGeometry, attribName, dstVtxnum, -1, value, mode);
         } else
         {
-            error('AVL Copy Attrib: Unknown size');
+            error('Copy Attribute AVL: Unknown size');
             return success;
         }
     } else if (attribType == 3)  // Array of Integers
@@ -94,7 +94,7 @@ avl_copyvertexattrib(const int srcGeometry;
         success = setvertexattrib(dstGeometry, attribName, dstVtxnum, -1, value, mode);
     } else
     {
-        error('AVL Copy Attrib: Unknown type');
+        error('Copy Attribute AVL: Unknown type');
         return success;
     }
     string attribTypeInfo = vertexattribtypeinfo(srcGeometry, attribName);

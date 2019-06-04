@@ -10,7 +10,7 @@
 #include "avl_angle.h" // doc
 #include "avl_unique.h" // doc
 #include "avl_median.h" // doc
-#include "avl_clamp.h"  // Todo: functions + split
+#include "avl_clamp.h"  // Todo: rename
 #include "avl_shift.h" // doc
 #include "avl_polyneighbours.h" // doc
 #include "avl_pointattribs.h" // doc
@@ -27,7 +27,7 @@
 #include "avl_trianglearea.h"
 #include "avl_trianglenormal.h"
 #include "avl_isinsphere.h" // doc
-#include "avl_range.h"
+#include "avl_range.h" // Todo: check
 #include "avl_hedge_srcpos.h"
 #include "avl_hedge_dstpos.h"
 #include "avl_hedge_presrcpos.h"
@@ -44,7 +44,7 @@
 #include "avl_copydetailattrib.h"
 #include "avl_copydetailattribs.h"
 #include "avl_tostring.h"
-//#include "avl_filepath.h"
+//#include "avl_filepath.h" // -?
 #include "avl_sphericaldistance.h"
 #include "avl_copypointgroup.h"
 #include "avl_copypointgroups.h"
@@ -67,8 +67,8 @@
 #include "avl_trianglecentroid.h"
 #include "avl_istiny.h"
 //#include "avl_mode.h"
-//#include "avl_sample.h"
-//#include "avl_choice.h"
+#include "avl_sample.h"
+#include "avl_choice.h"
 //#include "avl_shuffle.h"
 //#include "avl_pow.h"
 #include "avl_isodd.h"
@@ -84,7 +84,7 @@
 //#include "avl_isconvex.h"
 //#include "avl_isconcave.h"
 #include "avl_isflat.h"
-//#include "avl_merge.h" mergevalues?
+//#include "avl_merge.h" // mergevalues?
 //#include "avl_polycurvature.h"
 //#include "avl_triangulate.h"
 //#include "avl_convolve1d.h"
@@ -101,14 +101,18 @@
 //#include "avl_rawgroupbyrange.h"
 //#include "avl_selectloop.h"
 //#include "avl_selectring.h"
-#include "avl_polyarea.h" // 2d
+#include "avl_polyarea.h"
 //#include "avl_polyvolume.h"
-#include "avl_polycentroid.h" // 2d
-//#include "avl_primcentroid.h"
+#include "avl_polycentroid.h"
+#include "avl_primcentroid.h"
 //#include "avl_polyperimeter.h" // 2d
 //#include "avl_triangleperimeter.h" // 2d
 //#include "avl_trianglevolume.h"
 //#include "avl_bfind.h"
 #include "avl_limits.h" // double ??
+#include "avl_randrange.h"
+//#include "avl_frompolar.h"
+//#include "avl_topolar.h"
+#include "avl_in.h"
 
 #endif  // _AVL_H_

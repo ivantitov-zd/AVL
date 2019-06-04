@@ -21,7 +21,7 @@ avl_range(const float start;
             newArray[index++] = value;
     } else
     {
-        error('Step argument must not be 0');
+        error('Range AVL: Step argument must not be 0');
     }
     return newArray;
 }
@@ -60,7 +60,7 @@ avl_range(const int start;
             newArray[index++] = value;
     } else
     {
-        error('Step argument must not be 0');
+        error('Range AVL: Step argument must not be 0');
     }
     return newArray;
 }
