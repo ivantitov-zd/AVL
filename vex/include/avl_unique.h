@@ -5,100 +5,100 @@
 float[]
 avl_unique(const float sequence[])
 {
-    float newSequence[];
-    append(newSequence, sequence[0]);
+    float uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 int[]
 avl_unique(const int sequence[])
 {
-    int newSequence[];
-    append(newSequence, sequence[0]);
+    int uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 string[]
 avl_unique(const string sequence[])
 {
-    string newSequence[];
-    append(newSequence, sequence[0]);
+    string uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 vector2[]
 avl_unique(const vector2 sequence[])
 {
-    vector2 newSequence[];
-    append(newSequence, sequence[0]);
+    vector2 uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 vector[]
 avl_unique(const vector sequence[])
 {
-    vector newSequence[];
-    append(newSequence, sequence[0]);
+    vector uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 vector4[]
 avl_unique(const vector4 sequence[])
 {
-    vector4 newSequence[];
-    append(newSequence, sequence[0]);
+    vector4 uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 matrix2[]
 avl_unique(const matrix2 sequence[])
 {
-    matrix2 newSequence[];
-    append(newSequence, sequence[0]);
+    matrix2 uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 matrix3[]
 avl_unique(const matrix3 sequence[])
 {
-    matrix3 newSequence[];
-    append(newSequence, sequence[0]);
+    matrix3 uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 matrix[]
 avl_unique(const matrix sequence[])
 {
-    matrix newSequence[];
-    append(newSequence, sequence[0]);
+    matrix uniqueSequence[];
+    append(uniqueSequence, sequence[0]);
     for (int i = 1; i < len(sequence); ++i)
         if (sequence[i] != sequence[i-1])
-            append(newSequence, sequence[i]);
-    return newSequence;
+            append(uniqueSequence, sequence[i]);
+    return uniqueSequence;
 }
 
 #endif  // _AVL_UNIQUE_H_

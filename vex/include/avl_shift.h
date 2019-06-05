@@ -6,99 +6,99 @@ float[]
 avl_shift(const float sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    float newSequence[];
-    resize(newSequence, sequenceLength);
+    float shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 int[]
 avl_shift(const int sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    int newSequence[];
-    resize(newSequence, sequenceLength);
+    int shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 string[]
 avl_shift(const string sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    string newSequence[];
-    resize(newSequence, sequenceLength);
+    string shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 vector2[]
 avl_shift(const vector2 sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    vector2 newSequence[];
-    resize(newSequence, sequenceLength);
+    vector2 shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 vector[]
 avl_shift(const vector sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    vector newSequence[];
-    resize(newSequence, sequenceLength);
+    vector shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 vector4[]
 avl_shift(const vector4 sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    vector4 newSequence[];
-    resize(newSequence, sequenceLength);
+    vector4 shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 matrix2[]
 avl_shift(const matrix2 sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    matrix2 newSequence[];
-    resize(newSequence, sequenceLength);
+    matrix2 shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 matrix3[]
 avl_shift(const matrix3 sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    matrix3 newSequence[];
-    resize(newSequence, sequenceLength);
+    matrix3 shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 matrix[]
 avl_shift(const matrix sequence[]; const int shift)
 {
     int sequenceLength = len(sequence);
-    matrix newSequence[];
-    resize(newSequence, sequenceLength);
+    matrix shiftedSequence[];
+    resize(shiftedSequence, sequenceLength);
     for (int i = 0; i < sequenceLength; ++i)
-        newSequence[(i + shift) % sequenceLength] = sequence[i];
-    return newSequence;
+        shiftedSequence[(i + shift) % sequenceLength] = sequence[i];
+    return shiftedSequence;
 }
 
 #endif  // _AVL_SHIFT_H_

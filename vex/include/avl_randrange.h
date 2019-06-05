@@ -7,7 +7,7 @@ avl_randrange(const float seed;
               const float min;
               const float max)
 {
-    return fit01(float(rand(seed)), min, max);
+    return fit01(rand(seed), min, max);
 }
 
 float
@@ -16,7 +16,7 @@ avl_randrange(const float seed;
               const float min;
               const float max)
 {
-    return fit01(float(rand(seed, seed2)), min, max);
+    return fit01(rand(seed, seed2), min, max);
 }
 
 float
@@ -24,7 +24,7 @@ avl_randrange(const vector2 seed;
               const float min;
               const float max)
 {
-    return fit01(float(rand(seed)), min, max);
+    return fit01(rand(seed), min, max);
 }
 
 float
@@ -32,7 +32,7 @@ avl_randrange(const vector seed;
               const float min;
               const float max)
 {
-    return fit01(float(rand(seed)), min, max);
+    return fit01(rand(seed), min, max);
 }
 
 float
@@ -40,7 +40,7 @@ avl_randrange(const vector4 seed;
               const float min;
               const float max)
 {
-    return fit01(float(rand(seed)), min, max);
+    return fit01(rand(seed), min, max);
 }
 
 int
@@ -48,7 +48,16 @@ avl_randrange(const float seed;
               const int min;
               const int max)
 {
-    return min + (int)(float(rand(seed)) * (max - min));
+    return (int)fit01(rand(seed), min, max);
+}
+
+int
+avl_randrange(const float seed;
+              const float seed2;
+              const int min;
+              const int max)
+{
+    return (int)fit01(rand(seed, seed2), min, max);
 }
 
 int
@@ -56,7 +65,7 @@ avl_randrange(const vector2 seed;
               const int min;
               const int max)
 {
-    return min + (int)(float(rand(seed)) * (max - min));
+    return (int)fit01(rand(seed), min, max);
 }
 
 int
@@ -64,7 +73,7 @@ avl_randrange(const vector seed;
               const int min;
               const int max)
 {
-    return min + (int)(float(rand(seed)) * (max - min));
+    return (int)fit01(rand(seed), min, max);
 }
 
 int
@@ -72,7 +81,7 @@ avl_randrange(const vector4 seed;
               const int min;
               const int max)
 {
-    return min + (int)(float(rand(seed)) * (max - min));
+    return (int)fit01(rand(seed), min, max);
 }
 
 vector2

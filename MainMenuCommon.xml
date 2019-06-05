@@ -68,7 +68,7 @@
             <separatorItem/>
 
             <scriptItem id="h.avl.repository">
-                <label>GitHub</label>
+                <label>Visit on GitHub</label>
                 <scriptCode>
 import webbrowser
 

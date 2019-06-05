@@ -20,13 +20,19 @@ avl_sample(const float sequence[];
     reize(sampleSequence, sequenceLength);
     int selected[];
     reize(selected, sequenceLength);
+    int index;
     for (int i = 0; i < size; ++i)
     {
-        do
+        for (float j = 0.1234567; 1; j += 0.01245)
         {
-            selected[i] = avl_randrange(0, sequenceLength, i * seed);
-        } while (avl_in(selected, selected[i], 0, i));
-        sampleSequence[i] = sequence[selected[i]];
+            index = avl_randrange(0, sequenceLength, i * j * seed);
+            if (avl_in(selected, selected[i], 0, i))
+            {
+                selected[i] = index;
+                sampleSequence[i] = sequence[index];
+                break;
+            }
+        }
     }
     return sampleSequence;
 }

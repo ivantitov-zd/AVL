@@ -10,7 +10,8 @@
 #include "avl_angle.h" // doc
 #include "avl_unique.h" // doc
 #include "avl_median.h" // doc
-#include "avl_clamp.h"  // Todo: rename
+#include "avl_clamp01.h"
+#include "avl_clamp11.h"
 #include "avl_shift.h" // doc
 #include "avl_polyneighbours.h" // doc
 #include "avl_pointattribs.h" // doc
@@ -75,7 +76,7 @@
 #include "avl_iseven.h"
 #include "avl_isinbbox.h"
 #include "avl_isinpointbbox.h"
-#include "avl_isinsquare.h"
+#include "avl_isinrectangle.h"
 //#include "avl_isincircle.h"
 //#include "avl_circlelength.h"
 //#include "avl_circlearea.h"
@@ -114,5 +115,8 @@
 //#include "avl_frompolar.h"
 //#include "avl_topolar.h"
 #include "avl_in.h"
+#include "avl_randint.h"
+//#include "avl_fromspherical.h"
+//#include "avl_tospherical.h"
 
 #endif  // _AVL_H_
