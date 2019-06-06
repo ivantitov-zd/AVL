@@ -49,7 +49,7 @@ avl_polycentroid(const vector vertices[]; const string mode)
             pos1 = vertices[i];
             pos2 = vertices[i+1];
             vector cross = cross(pos0-pos1, pos0-pos2);
-            if (dot(cross, {1.0, 0.9, 0.8}) >= 0)
+            if (dot(cross, {1.0, 0.9, 0.8}) >= 0.0)
                 centroid += avl_trianglecentroid(pos0, pos1, pos2) *
                             (avl_trianglearea(pos0, pos1, pos2) / area);
             else

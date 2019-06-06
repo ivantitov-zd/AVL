@@ -12,4 +12,15 @@ avl_trianglenormal(const vector vertex1;
     return normalize(cross(edge1, edge2));
 }
 
+vector
+avl_trianglenormal(const vector vertices[])
+{
+    // Todo (1.0): Triangle check
+    vector edge1 = vertices[0] - vertices[1];
+    vector edge2 = vertices[2] - vertices[1];
+    return normalize(cross(edge1, edge2));
+}
+
+// Todo (?): float avl_trianglenormal(<geometry>; int point1; int point2; int point3)
+
 #endif  // _AVL_TRIANGLENORMAL_H_

@@ -103,20 +103,22 @@
 //#include "avl_selectloop.h"
 //#include "avl_selectring.h"
 #include "avl_polyarea.h"
-//#include "avl_polyvolume.h"
+#include "avl_polyvolume.h"
 #include "avl_polycentroid.h"
 #include "avl_primcentroid.h"
-//#include "avl_polyperimeter.h" // 2d
-//#include "avl_triangleperimeter.h" // 2d
-//#include "avl_trianglevolume.h"
+#include "avl_polyperimeter.h"
+#include "avl_triangleperimeter.h"
+#include "avl_trianglevolume.h"
 //#include "avl_bfind.h"
 #include "avl_limits.h" // double ??
 #include "avl_randrange.h"
-//#include "avl_frompolar.h"
-//#include "avl_topolar.h"
+#include "avl_frompolar.h"
+#include "avl_topolar.h"
 #include "avl_in.h"
 #include "avl_randint.h"
 //#include "avl_fromspherical.h"
 //#include "avl_tospherical.h"
+#include "avl_removeduplicates.h"
+#include "avl_removevertex.h"
 
 #endif  // _AVL_H_
