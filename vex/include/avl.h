@@ -67,10 +67,10 @@
 #include "avl_getpointbbox_area.h"
 #include "avl_trianglecentroid.h"
 #include "avl_istiny.h"
-//#include "avl_mode.h"
+#include "avl_mode.h"
 #include "avl_sample.h"
 #include "avl_choice.h"
-//#include "avl_shuffle.h"
+#include "avl_shuffle.h"
 //#include "avl_pow.h"
 #include "avl_isodd.h"
 #include "avl_iseven.h"
@@ -120,5 +120,7 @@
 //#include "avl_tospherical.h"
 #include "avl_removeduplicates.h"
 #include "avl_removevertex.h"
+#include "avl_maxindex.h"
+#include "avl_minindex.h"
 
 #endif  // _AVL_H_
