@@ -1,8 +1,8 @@
 #pragma once
-#ifndef _AVL_ISINSIDE_H_
-#define _AVL_ISINSIDE_H_
+#ifndef _AVL_INSIDE_H_
+#define _AVL_INSIDE_H_
 
-int avl_isinside(const int geometry; const vector position)
+int avl_inside(const int geometry; const vector position)
 {
     int primitive;
     vector uvw;
@@ -16,7 +16,7 @@ int avl_isinside(const int geometry; const vector position)
         return 0;
 }
 
-int avl_isinside(const string geometry; const vector position)
+int avl_inside(const string geometry; const vector position)
 {
     int primitive;
     vector uvw;
@@ -30,4 +30,4 @@ int avl_isinside(const string geometry; const vector position)
         return 0;
 }
 
-#endif  // _AVL_ISINSIDE_H_
+#endif  // _AVL_INSIDE_H_

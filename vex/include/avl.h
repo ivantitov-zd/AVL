@@ -10,6 +10,8 @@
 #include "avl_angle.h" // doc
 #include "avl_unique.h" // doc
 #include "avl_median.h" // doc
+#include "avl_medianhigh.h"
+#include "avl_medianlow.h"
 #include "avl_clamp01.h"
 #include "avl_clamp11.h"
 #include "avl_shift.h" // doc
@@ -23,11 +25,11 @@
 #include "avl_primgroups.h" // doc
 #include "avl_edgegroups.h" // doc
 #include "avl_padzero.h" // doc
-#include "avl_isinside.h" // doc
+#include "avl_inside.h" // doc
 #include "avl_print.h" // doc
 #include "avl_trianglearea.h"
 #include "avl_trianglenormal.h"
-#include "avl_isinsphere.h" // doc
+#include "avl_insphere.h" // doc
 #include "avl_range.h" // Todo: check
 #include "avl_hedge_srcpos.h"
 #include "avl_hedge_dstpos.h"
@@ -45,7 +47,6 @@
 #include "avl_copydetailattrib.h"
 #include "avl_copydetailattribs.h"
 #include "avl_tostring.h"
-//#include "avl_filepath.h" // -?
 #include "avl_sphericaldistance.h"
 #include "avl_copypointgroup.h"
 #include "avl_copypointgroups.h"
@@ -58,7 +59,7 @@
 #include "avl_hedge_opposite.h"
 #include "avl_pointcurvature.h"
 #include "avl_splitext.h"
-#include "avl_isalmostequal.h"
+#include "avl_almostequal.h"
 #include "avl_shiftvertexorder.h"
 #include "avl_reversevertexorder.h"
 #include "avl_getbbox_volume.h"
@@ -71,15 +72,14 @@
 #include "avl_sample.h"
 #include "avl_choice.h"
 #include "avl_shuffle.h"
-//#include "avl_pow.h"
 #include "avl_isodd.h"
 #include "avl_iseven.h"
-#include "avl_isinbbox.h"
-#include "avl_isinpointbbox.h"
-#include "avl_isinrectangle.h"
-//#include "avl_isincircle.h"
-//#include "avl_circlelength.h"
-//#include "avl_circlearea.h"
+#include "avl_inbbox.h"
+#include "avl_inpointbbox.h"
+#include "avl_inrectangle.h"
+#include "avl_incircle.h"
+#include "avl_circlelength.h"
+#include "avl_circlearea.h"
 #include "avl_spherevolume.h"
 #include "avl_spherearea.h"
 //#include "avl_isconvex.h"
@@ -88,6 +88,7 @@
 //#include "avl_merge.h" // mergevalues?
 //#include "avl_polycurvature.h"
 //#include "avl_triangulate.h"
+//#include "avl_polyextrude.h"
 //#include "avl_convolve1d.h"
 //#include "avl_filter.h"s
 //#include "avl_gradient.h"

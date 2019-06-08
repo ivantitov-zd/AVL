@@ -1,9 +1,9 @@
 #pragma once
-#ifndef _AVL_ISINPOINTBBOX_H_
-#define _AVL_ISINPOINTBBOX_H_
+#ifndef _AVL_INPOINTBBOX_H_
+#define _AVL_INPOINTBBOX_H_
 
 int
-avl_isinpointbbox(const int geometry; const vector position)
+avl_inpointbbox(const int geometry; const vector position)
 {
     vector min = getpointbbox_min(geometry);
     vector max = getpointbbox_max(geometry);
@@ -13,7 +13,7 @@ avl_isinpointbbox(const int geometry; const vector position)
 }
 
 int
-avl_isinpointbbox(const string geometry; const vector position)
+avl_inpointbbox(const string geometry; const vector position)
 {
     vector min = getpointbbox_min(geometry);
     vector max = getpointbbox_max(geometry);
@@ -23,9 +23,9 @@ avl_isinpointbbox(const string geometry; const vector position)
 }
 
 int
-avl_isinpointbbox(const int geometry;
-                  const vector position;
-                  const string pointgroup)
+avl_inpointbbox(const int geometry;
+                const vector position;
+                const string pointgroup)
 {
     vector min = getpointbbox_min(geometry, pointgroup);
     vector max = getpointbbox_max(geometry, pointgroup);
@@ -35,9 +35,9 @@ avl_isinpointbbox(const int geometry;
 }
 
 int
-avl_isinpointbbox(const string geometry;
-                  const vector position;
-                  const string pointgroup)
+avl_inpointbbox(const string geometry;
+                const vector position;
+                const string pointgroup)
 {
     vector min = getpointbbox_min(geometry, pointgroup);
     vector max = getpointbbox_max(geometry, pointgroup);
@@ -46,4 +46,4 @@ avl_isinpointbbox(const string geometry;
            position.z > min.z && position.z < max.z;
 }
 
-#endif  // _AVL_ISINPOINTBBOX_H_
+#endif  // _AVL_INPOINTBBOX_H_

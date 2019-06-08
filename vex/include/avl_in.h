@@ -2,6 +2,8 @@
 #ifndef _AVL_IN_H_
 #define _AVL_IN_H_
 
+// Todo: negative indices support, reverse search
+
 #include <math.h>
 
 #include "avl_isalmostequal.h"
@@ -41,7 +43,7 @@ avl_in(const float sequence[];
     int sequenceLength = len(sequence);
     if (start >= end && end >= sequenceLength)  // Todo: comment
     {
-        error('In AVL: todo');
+        error('In AVL: todo');  // Todo: error message
         return;
     }
     for (int i = start; start < end; ++i)
@@ -71,7 +73,7 @@ avl_in(const float sequence[];
     int sequenceLength = len(sequence);
     if (start >= end && end >= sequenceLength)  // Todo: comment
     {
-        error('In AVL: todo');
+        error('In AVL: todo');  // Todo: error message
         return;
     }
     for (int i = start; start < end; ++i)
@@ -102,8 +104,6 @@ avl_in(const int sequence[];
 {
     return find(sequence, value, start, end) >= 0;
 }
-
-// Todo: negative indices support, reverse search
 
 // Todo (1.0): int avl_in(const string; string; ...)
 

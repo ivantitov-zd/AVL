@@ -1,4 +1,4 @@
-= avl_isinside =
+= avl_inside =
 
 #type: vex
 #context: all
@@ -7,7 +7,7 @@
 
 """Checks if the given position is inside the given geometry."""
 
-:usage: `int avl_isinside(<geometry>, vector position)`
+:usage: `int avl_inside(<geometry>, vector position)`
 
 [Include:_common#geometry]
 

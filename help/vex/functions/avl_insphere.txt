@@ -1,4 +1,4 @@
-= avl_isinsphere =
+= avl_insphere =
 
 #type: vex
 #context: all
@@ -7,7 +7,7 @@
 
 """Checks if the given position is inside the given sphere."""
 
-:usage: `int avl_isinsphere(vector position, vector center, float radius)`
+:usage: `int avl_insphere(vector position, vector center, float radius)`
 
 :arg:position:
     Position to check.
