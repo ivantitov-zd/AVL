@@ -5,14 +5,20 @@
 #tags: array, math, avl
 #group: array
 
-"""Returns the median (middle value) of numeric data, using the common “mean of middle two” method."""
+"""Returns the median (middle value) of numeric data, using the common "mean of middle two" method."""
 
+:usage: `float avl_median(int sequence[])`
 :usage: `float avl_median(float sequence[])`
 
 :arg:sequence:
-    Array with values.
+    Array with numeric values.
 
 :returns:
-    Returns the median (middle value) of numeric data, using the common “mean of middle two” method.
+    Returns the median (middle value) of numeric data, using the common "mean of middle two" method.
 
-[Include:_avl_common#not_std_lib]
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:avl_medianhigh]
+- [Vex:avl_medianlow]

@@ -1,0 +1,8 @@
+= AVL |> Type Limit Constants =
+
+#icon: CHOP/limit
+#parent: avl
+
+"""Type limit constants contained in the avl_limits.h."""
+
+Todo (1.0): type limits table

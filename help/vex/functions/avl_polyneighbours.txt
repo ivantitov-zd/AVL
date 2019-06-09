@@ -21,4 +21,4 @@
 :returns:
     Returns an array of primitive numbers of polygons that share an edge or points with this polygon.
 
-[Include:_avl_common#not_std_lib]
+[Include:_avl_common#not_std]

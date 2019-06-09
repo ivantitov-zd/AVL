@@ -1,0 +1,31 @@
+= avl_clamp11 =
+
+#type: vex
+#context: all
+#tags: interp, avl
+#group: interp
+
+"""Returns value clamped between -1 and 1."""
+
+:usage: `float clamp11(float value)`
+:usage: `vector2 clamp11(vector2 value)`
+:usage: `vector clamp11(vector value)`
+:usage: `vector4 clamp11(vector4 value)`
+
+:arg:value:
+    Value to clamp.
+
+:returns:
+    Returns <<value>> clamped between `-1` and `1`. For vectors, this is done per-component.
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:clamp]
+- [Vex:avl_clamp01]
+- [Vex:fit]
+- [Vex:fit01]
+- [Vex:fit10]
+- [Vex:fit11]
+- [Vex:efit]

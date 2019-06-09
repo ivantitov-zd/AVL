@@ -1,0 +1,10 @@
+= AVL |> Color Constants =
+
+#icon: SOP/color
+#parent: avl
+
+"""Color constants contained in the avl_colors.h."""
+
+Well, there is red, green, blue and gray.
+
+Todo (1.0): color table

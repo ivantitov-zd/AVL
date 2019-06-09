@@ -24,4 +24,4 @@ For vectors, this is done per-component.
 :returns:
     Returns the `value` rounded to `ndigits` precision before/after the decimal point.
 
-[Include:_avl_common#not_std_lib]
+[Include:_avl_common#not_std]

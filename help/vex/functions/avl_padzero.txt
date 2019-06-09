@@ -18,4 +18,4 @@
 :returns:
     Returns a string containing `value` preceded by enough zeros to make up `size` digits.
 
-[Include:_avl_common#not_std_lib]
+[Include:_avl_common#not_std]

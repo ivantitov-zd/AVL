@@ -1,0 +1,23 @@
+= avl_minindex =
+
+#type: vex
+#context: all
+#tags: array, avl
+#group: array
+
+"""Finds index of the minimum value in the array."""
+
+:usage: `float avl_minindex(int sequence[])`
+:usage: `float avl_minindex(float sequence[])`
+
+:arg:sequence:
+    Array with numeric values.
+
+:returns:
+    Returns index of the minimum value in the array.
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:avl_maxindex]

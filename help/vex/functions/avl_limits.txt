@@ -1,0 +1,9 @@
+= avl_limits =
+
+#type: vex
+#context: all
+#tags: color, avl
+#group: color
+#redirect: /vex/avl_limits
+// Todo (1.0): redirection
+"""Contains type limit constants."""

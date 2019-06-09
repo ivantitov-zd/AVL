@@ -1,5 +1,8 @@
+#pragma once
 #ifndef _AVL_MAXINDEX_H_
 #define _AVL_MAXINDEX_H_
+
+// Todo (?): -1 for empty sequence
 
 int
 avl_maxindex(const float sequence[])

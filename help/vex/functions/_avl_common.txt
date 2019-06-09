@@ -1,6 +1,16 @@
 #type: include
 
 :warning:
-    #id: not_std_lib
+    #id: not_std
     
-    Please note that this function is not included in the standard Houdini library, but is part of the [Advanced VEX Library|/vex/avl].
+    Please note that this function is not included in the standard Houdini VEX library, but is part of the [Advanced VEX Library|/vex/avl].
+
+:warning:
+    #id: experimental
+    
+    This feature is experimental and subject to change in the future.
+
+:warning:
+    #id: deprecated
+    
+    This feature was deprecated!

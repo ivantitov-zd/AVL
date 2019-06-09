@@ -21,4 +21,4 @@
 :returns:
     Returns 1 if the `position` is inside a sphere with given `center` and `radius` or 0 otherwise.
 
-[Include:_avl_common#not_std_lib]
+[Include:_avl_common#not_std]

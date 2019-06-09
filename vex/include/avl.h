@@ -10,10 +10,10 @@
 #include "avl_angle.h" // doc
 #include "avl_unique.h" // doc
 #include "avl_median.h" // doc
-#include "avl_medianhigh.h"
-#include "avl_medianlow.h"
-#include "avl_clamp01.h"
-#include "avl_clamp11.h"
+#include "avl_medianhigh.h" // doc
+#include "avl_medianlow.h" // doc
+#include "avl_clamp01.h" // doc
+#include "avl_clamp11.h" // doc
 #include "avl_shift.h" // doc
 #include "avl_polyneighbours.h" // doc
 #include "avl_pointattribs.h" // doc
@@ -37,7 +37,7 @@
 #include "avl_hedge_postdstpos.h"
 #include "avl_normalizevalues.h"
 #include "avl_count.h"
-#include "avl_colors.h"
+#include "avl_colors.h" // doc
 #include "avl_copypointattrib.h"
 #include "avl_copypointattribs.h"
 #include "avl_copyprimattrib.h"
@@ -88,7 +88,7 @@
 //#include "avl_merge.h" // mergevalues?
 //#include "avl_polycurvature.h"
 //#include "avl_triangulate.h"
-//#include "avl_polyextrude.h"
+#include "avl_polyextrude.h"
 //#include "avl_convolve1d.h"
 //#include "avl_filter.h"s
 //#include "avl_gradient.h"
@@ -111,7 +111,7 @@
 #include "avl_triangleperimeter.h"
 #include "avl_trianglevolume.h"
 //#include "avl_bfind.h"
-#include "avl_limits.h" // double ??
+#include "avl_limits.h" // doc // double ??
 #include "avl_randrange.h"
 #include "avl_frompolar.h"
 #include "avl_topolar.h"
@@ -121,7 +121,7 @@
 //#include "avl_tospherical.h"
 #include "avl_removeduplicates.h"
 #include "avl_removevertex.h"
-#include "avl_maxindex.h"
-#include "avl_minindex.h"
+#include "avl_maxindex.h" // doc
+#include "avl_minindex.h" // doc
 
 #endif  // _AVL_H_

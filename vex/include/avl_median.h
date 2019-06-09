@@ -26,44 +26,12 @@ avl_median(const int sequence[])
         return sorted[sequenceLength / 2];
 }
 
+// Todo (1.0): vector2 avl_median(const vector2[])
+
+// Todo (1.0): vector avl_median(const vector[])
+
 // Todo (2.0): float avl_median(const float; const float; const float ...)
 
 // Todo (2.0): float avl_median(const int; const int; const int ...)
-
-float
-avl_medianlow(const float sequence[])
-{
-    float sorted[] = sort(sequence);
-    return sorted[(len(sorted) - 1) / 2];
-}
-
-int
-avl_medianlow(const int sequence[])
-{
-    int sorted[] = sort(sequence);
-    return sorted[(len(sorted) - 1) / 2];
-}
-
-// Todo (2.0): float avl_medianlow(const float; const float; const float ...)
-
-// Todo (2.0): int avl_medianlow(const int; const int; const int ...)
-
-float
-avl_medianhigh(const float sequence[])
-{
-    float sorted[] = sort(sequence);
-    return sorted[len(sorted) / 2];
-}
-
-int
-avl_medianhigh(const int sequence[])
-{
-    int sorted[] = sort(sequence);
-    return sorted[len(sorted) / 2];
-}
-
-// Todo (2.0): float avl_medianhigh(const float; const float; const float ...)
-
-// Todo (2.0): int avl_medianhigh(const int; const int; const int ...)
 
 #endif  // _AVL_MEDIAN_H_

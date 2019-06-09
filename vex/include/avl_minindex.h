@@ -1,5 +1,8 @@
+#pragma once
 #ifndef _AVL_MININDEX_H_
 #define _AVL_MININDEX_H_
+
+// Todo (?): -1 for empty sequence
 
 int
 avl_minindex(const float sequence[])

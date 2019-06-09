@@ -1,0 +1,24 @@
+= avl_medianhigh =
+
+#type: vex
+#context: all
+#tags: array, math, avl
+#group: array
+
+"""Returns the high median (middle value) of numeric data."""
+
+:usage: `int avl_medianhigh(int sequence[])`
+:usage: `float avl_medianhigh(float sequence[])`
+
+:arg:sequence:
+    Array with numeric values.
+
+:returns:
+    Returns the middle value, when the sequence length is odd. Returns the larger of the two middle values, when it is even.
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:avl_median]
+- [Vex:avl_medianlow]

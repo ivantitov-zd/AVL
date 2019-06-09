@@ -16,6 +16,10 @@ avl_medianlow(const int sequence[])
     return sorted[(len(sorted) - 1) / 2];
 }
 
+// Todo (1.0): vector2 avl_medianlow(const vector2[])
+
+// Todo (1.0): vector avl_medianlow(const vector[])
+
 // Todo (2.0): float avl_medianlow(const float; const float; const float ...)
 
 // Todo (2.0): int avl_medianlow(const int; const int; const int ...)

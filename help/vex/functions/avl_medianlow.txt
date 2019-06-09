@@ -1,0 +1,24 @@
+= avl_medianlow =
+
+#type: vex
+#context: all
+#tags: array, math, avl
+#group: array
+
+"""Returns the low median (middle value) of numeric data."""
+
+:usage: `int avl_medianlow(int sequence[])`
+:usage: `float avl_medianlow(float sequence[])`
+
+:arg:sequence:
+    Array with numeric values.
+
+:returns:
+    Returns the middle value, when the sequence length is odd. Returns the smaller of the two middle values, when it is even.
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:avl_median]
+- [Vex:avl_medianhigh]

@@ -16,6 +16,10 @@ avl_medianhigh(const int sequence[])
     return sorted[len(sorted) / 2];
 }
 
+// Todo (1.0): vector2 avl_medianhigh(const vector2[])
+
+// Todo (1.0): vector avl_medianhigh(const vector[])
+
 // Todo (2.0): float avl_medianhigh(const float; const float; const float ...)
 
 // Todo (2.0): int avl_medianhigh(const int; const int; const int ...)

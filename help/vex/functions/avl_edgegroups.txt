@@ -14,4 +14,4 @@
 :returns:
     Returns a list of edge groups.
 
-[Include:_avl_common#not_std_lib]
+[Include:_avl_common#not_std]

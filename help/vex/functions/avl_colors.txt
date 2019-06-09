@@ -1,0 +1,9 @@
+= avl_colors =
+
+#type: vex
+#context: all
+#tags: color, avl
+#group: color
+#redirect: /vex/avl_colors
+// Todo (1.0): redirection
+"""Contains color constants."""
