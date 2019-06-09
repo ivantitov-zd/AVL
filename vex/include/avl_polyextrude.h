@@ -1,13 +1,18 @@
 #pragma once
 #ifndef _AVL_POLYEXTRUDE_H_
 #define _AVL_POLYEXTRUDE_H_
-// Todo (1.0): refactor and optimize
+
+#include "avl_copyprimattribs.h"
+#include "avl_copyprimgroups.h"
+#include "avl_reversevertexorder.h"
+
 void
 avl_polyextrude(const int geometry;
                 const int primnum;
                 const float distance;
                 const float inset;
-                const int limitInsetting;
+                const int limitInsetting
+                const float commonLimit;
                 const int divisions;
                 const int outputFront;
                 const int outputFrontGroup;
@@ -24,10 +29,6 @@ avl_polyextrude(const int geometry;
 
     vector primNormal = prim_normal(geometry, primnum, {0.5, 0.5, 0.0});
     vector primCenter = prim(geometry, 'P', primnum);
-    // int sourcePoints[] = primpoints(geometry, primnum);
-    // int sourcePointCount = len(sourcePoints);
-    // int endPoints[];
-    // resize(endPoints, sourcePointCount * divisions);
 
     int points[] = primpoints(geometry, primnum);
     int sourcePointCount = len(points);
@@ -35,53 +36,59 @@ avl_polyextrude(const int geometry;
 
     if (!outputBack)
         removeprim(geometry, primnum, 0);
-    else if (outputBackGroup)
-        setprimgroup(geometry, backGroupName, primnum, 1);
-
-
-    if (outputSide)
+    else
     {
-        //
+        if (distance >= 0)
+            avl_reversevertexorder(geometry, primnum);
+        if (outputBackGroup)
+            setprimgroup(geometry, backGroupName, primnum, 1);
     }
 
-    vector extr = primNormal * distance;
-    // for (int i = 0; i < sourcePointCount; ++i)
-    // {
-    //     vector sourcePosition = point(geometry, 'P', sourcePoints[i]);
-    //     vector ins = normalize(primCenter - sourcePosition) * inset;
-    //     vector step = (extr + ins) / divisions;
-    //     for (int d = 1; d <= divisions; ++d)
-    //     {
-    //         int newPoint = addpoint(geometry, sourcePoints[i]);
-    //         setpointattrib(geometry, 'P', newPoint, step * d, 'add');
-    //     }
-    // }
-
-    for (int d = 1; d <= divisions; ++d)
+    vector shifts[];
+    resize(shifts, sourcePointCount);
+    vector sourcePointPosition, insetShift, shift;
+    float insetLimit;
+    for (int i = 0; i < sourcePointCount; ++i)
     {
-        for (int i = 0; i < sourcePointCount; ++i)
+        sourcePointPosition = point(geometry, 'P', points[i]);
+        insetShift = primCenter - sourcePointPosition;
+        if (limitInsetting)
         {
-            vector sourcePosition = point(geometry, 'P', points[i]);
-            vector shift = (extr + normalize(primCenter - sourcePosition) * inset) / divisions;
-            int newPoint = addpoint(geometry, points[i]);
-            setpointattrib(geometry, 'P', newPoint, shift * d, 'add');
-            points[sourcePointCount * d + i] = newPoint;
-        }
-        for (int v = 0; v < sourcePointCount; ++v)
+            insetLimit = commonLimit == 0 ? length(insetShift) : commonLimit;
+            shift = primNormal * distance + normalize(insetShift) * min(inset, insetLimit);
+        } else
+            shift = primNormal * distance + normalize(insetShift) * inset;
+        shifts[i] = shift / divisions;
+    }
+
+    if (outputSide)  // Todo (1.0): output front
+    {
+        for (int d = 1; d <= divisions; ++d)
         {
-            int side = addprim(geometry, 'poly');
-            addvertex(geometry, side, points[sourcePointCount * d + v]);
-            addvertex(geometry, side, points[sourcePointCount * d + ((v + 1) % sourcePointCount)]);
-            addvertex(geometry, side, points[sourcePointCount * (d-1) + ((v + 1) % sourcePointCount)]);
-            addvertex(geometry, side, points[sourcePointCount * (d-1) + v]);
-            if (outputSideGroup)
-                setprimgroup(geometry, sideGroupName, side, 1);
+            for (int i = 0; i < sourcePointCount; ++i)
+            {
+                int newPoint = addpoint(geometry, points[i]);
+                setpointattrib(geometry, 'P', newPoint, shifts[i] * d, 'add');
+                points[sourcePointCount * d + i] = newPoint;
+            }
+            for (int v = 0; v < sourcePointCount; ++v)
+            {
+                int side = addprim(geometry, 'poly');
+                addvertex(geometry, side, points[sourcePointCount * (d-1) + v]);
+                addvertex(geometry, side, points[sourcePointCount * (d-1) + ((v + 1) % sourcePointCount)]);
+                addvertex(geometry, side, points[sourcePointCount * d + ((v + 1) % sourcePointCount)]);
+                addvertex(geometry, side, points[sourcePointCount * d + v]);
+                if (outputSideGroup)
+                    setprimgroup(geometry, sideGroupName, side, 1);
+            }
         }
     }
 
     if (outputFront)
     {
         int front = addprim(geometry, 'poly', points[-sourcePointCount:]);
+        avl_copyprimattribs(geometry, geometry, primnum, front, 'set');
+        avl_copyprimgroups(geometry, geometry, primnum, front, 'set');
         if (outputFrontGroup)
             setprimgroup(geometry, frontGroupName, front, 1);
     }
