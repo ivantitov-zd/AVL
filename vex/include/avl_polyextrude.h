@@ -11,7 +11,7 @@ avl_polyextrude(const int geometry;
                 const int primnum;
                 const float distance;
                 const float inset;
-                const int limitInsetting
+                const int limitInsetting;
                 const float commonLimit;
                 const int divisions;
                 const int outputFront;
