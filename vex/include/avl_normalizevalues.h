@@ -42,4 +42,26 @@ avl_normalizevalues(const float values[]; const float scale)
     return newValues;
 }
 
+float[]
+avl_normalizevalues(const int values[])
+{
+    float newValues[];
+    resize(newValues, len(values));
+    float total = sum(values);
+    foreach (int index; float weight; values)
+        newValues[index] = weight / total;
+    return newValues;
+}
+
+float[]
+avl_normalizevalues(const int values[]; const float scale)
+{
+    float newValues[];
+    resize(newValues, len(values));
+    float total = sum(values) / scale;
+    foreach (int index; float weight; values)
+        newValues[index] = weight / total;
+    return newValues;
+}
+
 #endif  // _AVL_NORMALIZEVALUES_H_

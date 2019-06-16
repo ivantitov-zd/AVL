@@ -2,6 +2,8 @@
 #ifndef _AVL_ISTINY_H_
 #define _AVL_ISTINY_H_
 
+#include <math.h>
+
 int
 avl_istiny(const int geometry;
            const int primnum;
@@ -20,6 +22,12 @@ avl_istiny(const int geometry;
 }
 
 int
+avl_istiny(const int geometry; const int primnum)
+{
+    return avl_istiny(geometry, primnum, M_TOLERANCE);
+}
+
+int
 avl_istiny(const string geometry;
            const int primnum;
            const float epsilon)
@@ -34,6 +42,12 @@ avl_istiny(const string geometry;
             return 1;
     }
     return 0;
+}
+
+int
+avl_istiny(const string geometry; const int primnum)
+{
+    return avl_istiny(geometry, primnum, M_TOLERANCE);
 }
 
 #endif  // _AVL_ISTINY_H_

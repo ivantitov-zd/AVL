@@ -27,16 +27,16 @@
 #include "avl_padzero.h" // doc
 #include "avl_inside.h" // doc
 #include "avl_print.h" // doc
-#include "avl_trianglearea.h"
-#include "avl_trianglenormal.h"
+#include "avl_triarea.h" // doc
+#include "avl_trinormal.h" // doc
 #include "avl_insphere.h" // doc
 #include "avl_range.h" // Todo: check
-#include "avl_hedge_srcpos.h"
-#include "avl_hedge_dstpos.h"
-#include "avl_hedge_presrcpos.h"
-#include "avl_hedge_postdstpos.h"
-#include "avl_normalizevalues.h"
-#include "avl_count.h"
+#include "avl_hedge_srcpos.h" // doc
+#include "avl_hedge_dstpos.h" // doc
+#include "avl_hedge_presrcpos.h" // doc
+#include "avl_hedge_postdstpos.h" // doc
+#include "avl_normalizevalues.h" // doc
+#include "avl_count.h" // doc
 #include "avl_colors.h" // doc
 #include "avl_copypointattrib.h"
 #include "avl_copypointattribs.h"
@@ -66,7 +66,7 @@
 #include "avl_getpointbbox_volume.h"
 #include "avl_getbbox_area.h"
 #include "avl_getpointbbox_area.h"
-#include "avl_trianglecentroid.h"
+#include "avl_tricentroid.h"
 #include "avl_istiny.h"
 #include "avl_mode.h"
 #include "avl_sample.h"
@@ -76,7 +76,7 @@
 #include "avl_iseven.h"
 #include "avl_inbbox.h"
 #include "avl_inpointbbox.h"
-#include "avl_inrectangle.h"
+#include "avl_inrect.h"
 #include "avl_incircle.h"
 #include "avl_circlelength.h"
 #include "avl_circlearea.h"
@@ -87,7 +87,7 @@
 #include "avl_isflat.h"
 //#include "avl_merge.h" // mergevalues?
 //#include "avl_polycurvature.h"
-//#include "avl_triangulate.h"
+#include "avl_triangulate.h"
 #include "avl_polyextrude.h"
 //#include "avl_convolve1d.h"
 //#include "avl_filter.h"s
@@ -108,8 +108,8 @@
 #include "avl_polycentroid.h"
 #include "avl_primcentroid.h"
 #include "avl_polyperimeter.h"
-#include "avl_triangleperimeter.h"
-#include "avl_trianglevolume.h"
+#include "avl_triperimeter.h"
+#include "avl_trivolume.h"
 //#include "avl_bfind.h"
 #include "avl_limits.h" // doc // double ??
 #include "avl_randrange.h"
@@ -120,8 +120,14 @@
 //#include "avl_fromspherical.h"
 //#include "avl_tospherical.h"
 #include "avl_removeduplicates.h"
-#include "avl_removevertex.h"
+#include "avl_removevertex.h" // doc
 #include "avl_maxindex.h" // doc
 #include "avl_minindex.h" // doc
+#include "avl_primtype.h"
+#include "avl_primtypename.h"
+#include "avl_polysplit.h"
+#include "avl_copyprim.h"
+//#include "avl_copypoint.h"
+//#include "avl_pointnormal.h"
 
 #endif  // _AVL_H_

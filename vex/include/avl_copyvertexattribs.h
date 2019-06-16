@@ -6,29 +6,29 @@
 #include "avl_copyvertexattrib.h"
 
 void
-avl_copyvertexattribs(const int srcGeometry;
-	                  const int dstGeometry;
-	                  const int srcVtxnum;
-	                  const int dstVtxnum;
-	                  const string mode)
+avl_copyvertexattribs(const int geometry;
+                      const int geohandle;
+                      const int srcVtxnum;
+                      const int dstVtxnum;
+                      const string mode)
 {
-    string attribs[] = avl_vertexattribs(srcGeometry);
-    foreach (string attribName; attribs)
-        avl_copyvertexattrib(srcGeometry, dstGeometry, srcVtxnum, dstVtxnum, attribName, mode);
+    string attribs[] = avl_vertexattribs(geometry);
+    for (string attribName : attribs)
+        avl_copyvertexattrib(geometry, geohandle, srcVtxnum, dstVtxnum, attribName, mode);
 }
 
 void
-avl_copyvertexattribs(const int srcGeometry;
-	                  const int dstGeometry;
-	                  const int srcVtxnum;
-	                  const int dstVtxnum;
-	                  const string mode;
-	                  const string pattern)
+avl_copyvertexattribs(const int geometry;
+                      const int geohandle;
+                      const int srcVtxnum;
+                      const int dstVtxnum;
+                      const string mode;
+                      const string pattern)
 {
-    string attribs[] = avl_vertexattribs(srcGeometry);
-    foreach (string attribName; attribs)
+    string attribs[] = avl_vertexattribs(geometry);
+    for (string attribName : attribs)
         if (match(pattern, attribName))
-            avl_copyvertexattrib(srcGeometry, dstGeometry, srcVtxnum, dstVtxnum, attribName, mode);
+            avl_copyvertexattrib(geometry, geohandle, srcVtxnum, dstVtxnum, attribName, mode);
 }
 
 #endif  // _AVL_COPYVERTEXATTRIBS_H_

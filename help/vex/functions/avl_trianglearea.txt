@@ -1,0 +1,22 @@
+= avl_trianglearea =
+
+#type: vex
+#context: all
+#tags: math, avl
+#group: math
+
+"""Calculates the area of a triangle."""
+
+:usage: `float avl_trianglearea(vector2 vertex1, vector2 vertex2, vector2 vertex3)`
+:usage: `float avl_trianglearea(vector2 vertices[])`
+:usage: `float avl_trianglearea(vector vertex1, vector vertex2, vector vertex3)`
+:usage: `float avl_trianglearea(vector vertices[])`
+
+:returns:
+    Returns the area of a triangle defined by three vertices.
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:avl_polyarea]

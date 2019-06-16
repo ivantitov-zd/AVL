@@ -1,0 +1,16 @@
+= avl_trianglenormal =
+
+#type: vex
+#context: all
+#tags: math, avl
+#group: math
+
+"""Calculates the normal of a triangle."""
+
+:usage: `vector avl_trianglenormal(vector vertex1, vector vertex2, vector vertex3)`
+:usage: `vector avl_trianglenormal(vector vertices[])`
+
+:returns:
+    Returns the normal vector of a triangle defined by three vertices. Normal is normalized.
+
+[Include:_avl_common#not_std]

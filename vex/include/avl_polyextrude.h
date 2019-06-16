@@ -6,13 +6,14 @@
 #include "avl_copyprimgroups.h"
 #include "avl_reversevertexorder.h"
 
-void
-avl_polyextrude(const int geometry;
+int[]
+avl_polyextrude(const int geohandle;
                 const int primnum;
                 const float distance;
                 const float inset;
                 const int limitInsetting;
                 const float commonLimit;
+                const float twist;
                 const int divisions;
                 const int outputFront;
                 const int outputFrontGroup;
@@ -24,24 +25,27 @@ avl_polyextrude(const int geometry;
                 const int outputBackGroup;
                 const string backGroupName)
 {
-    if (distance == 0.0 && inset == 0.0)
-        return;
+    int primitives[];
 
-    vector primNormal = prim_normal(geometry, primnum, {0.5, 0.5, 0.0});
-    vector primCenter = prim(geometry, 'P', primnum);
+    if (distance == 0 && inset == 0)
+        return primitives;
 
-    int points[] = primpoints(geometry, primnum);
+    vector primNormal = normalize(prim_normal(geohandle, primnum, {0.5, 0.5, 0}));
+    vector primCenter = prim(geohandle, 'P', primnum);
+
+    int points[] = primpoints(geohandle, primnum);
     int sourcePointCount = len(points);
     resize(points, sourcePointCount * divisions);
 
     if (!outputBack)
-        removeprim(geometry, primnum, 0);
+        removeprim(geohandle, primnum, 0);
     else
     {
         if (distance >= 0)
-            avl_reversevertexorder(geometry, primnum);
+            avl_reversevertexorder(geohandle, primnum);
         if (outputBackGroup)
-            setprimgroup(geometry, backGroupName, primnum, 1);
+            setprimgroup(geohandle, backGroupName, primnum, 1);
+        append(primitives, primnum);
     }
 
     vector shifts[];
@@ -50,7 +54,7 @@ avl_polyextrude(const int geometry;
     float insetLimit;
     for (int i = 0; i < sourcePointCount; ++i)
     {
-        sourcePointPosition = point(geometry, 'P', points[i]);
+        sourcePointPosition = point(geohandle, 'P', points[i]);
         insetShift = primCenter - sourcePointPosition;
         if (limitInsetting)
         {
@@ -67,31 +71,34 @@ avl_polyextrude(const int geometry;
         {
             for (int i = 0; i < sourcePointCount; ++i)
             {
-                int newPoint = addpoint(geometry, points[i]);
-                setpointattrib(geometry, 'P', newPoint, shifts[i] * d, 'add');
+                int newPoint = addpoint(geohandle, points[i]);
+                setpointattrib(geohandle, 'P', newPoint, shifts[i] * d, 'add');
                 points[sourcePointCount * d + i] = newPoint;
             }
             for (int v = 0; v < sourcePointCount; ++v)
             {
-                int side = addprim(geometry, 'poly');
-                addvertex(geometry, side, points[sourcePointCount * (d-1) + v]);
-                addvertex(geometry, side, points[sourcePointCount * (d-1) + ((v + 1) % sourcePointCount)]);
-                addvertex(geometry, side, points[sourcePointCount * d + ((v + 1) % sourcePointCount)]);
-                addvertex(geometry, side, points[sourcePointCount * d + v]);
+                int side = addprim(geohandle, 'poly');
+                addvertex(geohandle, side, points[sourcePointCount * (d-1) + v]);
+                addvertex(geohandle, side, points[sourcePointCount * (d-1) + ((v + 1) % sourcePointCount)]);
+                addvertex(geohandle, side, points[sourcePointCount * d + ((v + 1) % sourcePointCount)]);
+                addvertex(geohandle, side, points[sourcePointCount * d + v]);
                 if (outputSideGroup)
-                    setprimgroup(geometry, sideGroupName, side, 1);
+                    setprimgroup(geohandle, sideGroupName, side, 1);
+                append(primitives, side);
             }
         }
     }
 
     if (outputFront)
     {
-        int front = addprim(geometry, 'poly', points[-sourcePointCount:]);
-        avl_copyprimattribs(geometry, geometry, primnum, front, 'set');
-        avl_copyprimgroups(geometry, geometry, primnum, front, 'set');
+        int front = addprim(geohandle, 'poly', points[-sourcePointCount:]);
+        avl_copyprimattribs(geohandle, geohandle, primnum, front, 'set');
+        avl_copyprimgroups(geohandle, geohandle, primnum, front, 'set');
         if (outputFrontGroup)
-            setprimgroup(geometry, frontGroupName, front, 1);
+            setprimgroup(geohandle, frontGroupName, front, 1);
+        append(primitives, front);
     }
+    return primitives;
 }
 
 #endif  // _AVL_POLYEXTRUDE_H_

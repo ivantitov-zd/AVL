@@ -9,10 +9,7 @@ avl_choice(const float sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -21,10 +18,7 @@ avl_choice(const int sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -33,10 +27,7 @@ avl_choice(const string sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -45,10 +36,7 @@ avl_choice(const vector2 sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -57,10 +45,7 @@ avl_choice(const vector sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -69,10 +54,7 @@ avl_choice(const vector4 sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -81,10 +63,7 @@ avl_choice(const matrix2 sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -93,10 +72,7 @@ avl_choice(const matrix3 sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 
@@ -105,10 +81,7 @@ avl_choice(const matrix sequence[]; const float seed)
 {
     sequenceLength = len(sequence);
     if (sequenceLength == 0)
-    {
         error('Choice AVL: Sequence cannot be empty');
-        return;
-    }
     return sequence[avl_randrange(seed, 0, sequenceLength)];
 }
 

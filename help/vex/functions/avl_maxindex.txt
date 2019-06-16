@@ -7,8 +7,8 @@
 
 """Finds index of the maximum value in the array."""
 
-:usage: `float avl_maxindex(int sequence[])`
-:usage: `float avl_maxindex(float sequence[])`
+:usage: `int avl_maxindex(int sequence[])`
+:usage: `int avl_maxindex(float sequence[])`
 
 :arg:sequence:
     Array with numeric values.

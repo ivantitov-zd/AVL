@@ -6,29 +6,29 @@
 #include "avl_copypointgroup.h"
 
 void
-avl_copypointgroups(const int srcGeometry;
-	                const int dstGeometry;
+avl_copypointgroups(const int geometry;
+	                const int geohandle;
 	                const int srcPtnum;
 	                const int dstPtnum;
 	                const string mode)
 {
-    string groups[] = avl_pointgroups(srcGeometry);
-    foreach (string groupName; groups)
-        avl_copypointgroup(srcGeometry, dstGeometry, srcPtnum, dstPtnum, groupName, mode);
+    string groups[] = avl_pointgroups(geometry);
+    for (string groupName : groups)
+        avl_copypointgroup(geometry, geohandle, srcPtnum, dstPtnum, groupName, mode);
 }
 
 void
-avl_copypointgroups(const int srcGeometry;
-	                const int dstGeometry;
+avl_copypointgroups(const int geometry;
+	                const int geohandle;
 	                const int srcPtnum;
 	                const int dstPtnum;
 	                const string pattern;
 	                const string mode)
 {
-    string groups[] = avl_pointgroups(srcGeometry);
-    foreach (string groupName; groups)
+    string groups[] = avl_pointgroups(geometry);
+    for (string groupName : groups)
         if (match(pattern, groupName))
-            avl_copypointgroup(srcGeometry, dstGeometry, srcPtnum, dstPtnum, groupName, mode);
+            avl_copypointgroup(geometry, geohandle, srcPtnum, dstPtnum, groupName, mode);
 }
 
 #endif  // _AVL_COPYPOINTGROUPS_H_

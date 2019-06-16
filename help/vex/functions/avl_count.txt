@@ -1,0 +1,26 @@
+= avl_count =
+
+#type: vex
+#context: all
+#tags: array, string, avl
+#group: array
+
+"""Counts the number of times a value appears in an array or string."""
+
+:usage: `int avl_count(string haystack, string needle)`
+:usage: `int avl_count(<type> haystack[], <type> needle)`
+
+:arg:haystack:
+    String or array with items.
+
+:arg:needle:
+    Value to count.
+
+:returns:
+    Returns a number of all occurrences of a `needle` within a `haystack`.
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:find]

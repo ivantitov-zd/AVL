@@ -3,17 +3,17 @@
 #define _AVL_REMOVEVERTEX_H_
 
 void
-avl_removevertex(const int geometry;
+avl_removevertex(const int geohandle;
                  const int primnum;
                  const int vtxnum)
 {
-    int destinationPoint = addpoint(geometry, {0.0, 0.0, 0.0});
-    setvertexpoint(geometry, primnum, vtxnum, destinationPoint);
-    removepoint(geometry, destinationPoint);
+    int destinationPoint = addpoint(geohandle, {0.0, 0.0, 0.0});
+    setvertexpoint(geohandle, primnum, vtxnum, destinationPoint);
+    removepoint(geohandle, destinationPoint);
 }
 
 void
-avl_removevertex(const int geometry;
+avl_removevertex(const int geohandle;
                  const int primnum;
                  const int vtxnum;
                  const int mode)
@@ -22,24 +22,24 @@ avl_removevertex(const int geometry;
     {
         int sourcePoint;
         if (primnum == -1)
-            sourcePoint = vertexpoint(geometry, vtxnum);
+            sourcePoint = vertexpoint(geohandle, vtxnum);
         else
-            sourcePoint = vertexpoint(geometry, primvertex(geometry,
-                                                           primnum,
-                                                           vtxnum));
-        int connectedVertexCount = len(pointvertices(geometry, sourcePoint));
+            sourcePoint = vertexpoint(geohandle, primvertex(geohandle,
+                                                            primnum,
+                                                            vtxnum));
+        int connectedVertexCount = len(pointvertices(geohandle, sourcePoint));
         if (connectedVertexCount == 1)
-            removepoint(geometry, sourcePoint);
+            removepoint(geohandle, sourcePoint);
         else
-            avl_removevertex(geometry, primnum, vtxnum);
+            avl_removevertex(geohandle, primnum, vtxnum);
     } else
-        avl_removevertex(geometry, primnum, vtxnum);
+        avl_removevertex(geohandle, primnum, vtxnum);
 }
 
 void
-avl_removevertex(const int geometry; const int vtxnum)
+avl_removevertex(const int geohandle; const int vtxnum)
 {
-    avl_removevertex(geometry, -1, vtxnum);
+    avl_removevertex(geohandle, -1, vtxnum);
 }
 
 #endif  // _AVL_REMOVEVERTEX_H_

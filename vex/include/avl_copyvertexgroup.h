@@ -3,15 +3,15 @@
 #define _AVL_COPYVERTEXGROUP_H_
 
 int
-avl_copyvertexgroup(const int srcGeometry;
-                    const int dstGeometry;
+avl_copyvertexgroup(const int geometry;
+                    const int geohandle;
                     const int srcVtxnum;
                     const int dstVtxnum;
                     const string groupName;
                     const string mode)
 {
-    int value = invertexgroup(srcGeometry, groupName, srcVtxnum);
-    return setvertexgroup(dstGeometry, groupName, dstVtxnum, -1, value, mode);
+    int value = invertexgroup(geometry, groupName, srcVtxnum);
+    return setvertexgroup(geohandle, groupName, dstVtxnum, -1, value, mode);
 }
 
 #endif  // _AVL_COPYVERTEXGROUP_H_

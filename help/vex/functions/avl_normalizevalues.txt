@@ -1,0 +1,31 @@
+= avl_normalizevalues =
+
+#type: vex
+#context: all
+#tags: math, array, avl
+#group: math
+
+"""Normalizes values to sum 1."""
+
+:usage: `<vector> avl_normalizevalues(<vector> values)`
+:usage: `float[] avl_normalizevalues(int values[])`
+:usage: `float[] avl_normalizevalues(float values[])`
+:usage: `float[] avl_normalizevalues(int values[], float scale)`
+:usage: `float[] avl_normalizevalues(float values[], float scale)`
+
+:arg:values:
+    Array or vector with *positive* numeric values.
+
+:arg:scale:
+    Multiplier for values.
+
+    This is very efficient way to multiply array values after normalization. For vectors, just use multiplication.
+
+:returns:
+    Returns a new array with `values` normalized to sum `1` multiplied by the `scale`.
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:normalize]

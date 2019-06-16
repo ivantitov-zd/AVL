@@ -1,0 +1,25 @@
+= avl_hedge_srcpos =
+
+#type: vex
+#context: all
+#tags: hedge, avl
+#group: hedge
+
+"""Returns the position of the source point of the half-edge."""
+
+:usage: `vector avl_hedge_srcpos(<geometry>, int hedge)`
+
+[Include:_common#geometry]
+
+:arg:hedge:
+    Input half-edge.
+
+:returns:
+    Returns the position of the source point of the `hedge`.
+    <!-- Returns -1 if the half-edge is not valid. -->
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:avl_hedge_dstpos]

@@ -1,11 +1,11 @@
 #pragma once
-#ifndef _AVL_TRIANGLEPERIMETER_H_
-#define _AVL_TRIANGLEPERIMETER_H_
+#ifndef _AVL_TRIPERIMETER_H_
+#define _AVL_TRIPERIMETER_H_
 
 float
-avl_triangleperimeter(const vector2 vertex1;
-                      const vector2 vertex2;
-                      const vector2 vertex3)
+avl_triperimeter(const vector2 vertex1;
+                 const vector2 vertex2;
+                 const vector2 vertex3)
 {
     return distance(vertex1, vertex2) +
            distance(vertex2, vertex3) +
@@ -13,7 +13,7 @@ avl_triangleperimeter(const vector2 vertex1;
 }
 
 float
-avl_triangleperimeter(const vector2 vertices[])
+avl_triperimeter(const vector2 vertices[])
 {
     // Todo (1.0): Triangle check
     return distance(vertices[0], vertices[1]) +
@@ -22,9 +22,9 @@ avl_triangleperimeter(const vector2 vertices[])
 }
 
 float
-avl_triangleperimeter(const vector vertex1;
-                      const vector vertex2;
-                      const vector vertex3)
+avl_triperimeter(const vector vertex1;
+                 const vector vertex2;
+                 const vector vertex3)
 {
     return distance(vertex1, vertex2) +
            distance(vertex2, vertex3) +
@@ -32,7 +32,7 @@ avl_triangleperimeter(const vector vertex1;
 }
 
 float
-avl_triangleperimeter(const vector vertices[])
+avl_triperimeter(const vector vertices[])
 {
     // Todo (1.0): Triangle check
     return distance(vertices[0], vertices[1]) +
@@ -40,6 +40,6 @@ avl_triangleperimeter(const vector vertices[])
            distance(vertices[2], vertices[0]);
 }
 
-// Todo (?): float avl_triangleperimeter(<geometry>; int point1; int point2; int point3)
+// Todo (?): float avl_triperimeter(<geometry>; int point1; int point2; int point3)
 
-#endif  // _AVL_TRIANGLEPERIMETER_H_
+#endif  // _AVL_TRIPERIMETER_H_

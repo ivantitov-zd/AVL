@@ -6,25 +6,25 @@
 #include "avl_copydetailattrib.h"
 
 void
-avl_copydetailattribs(const int srcGeometry;
-	                  const int dstGeometry;
-	                  const string mode)
+avl_copydetailattribs(const int geometry;
+                      const int geohandle;
+                      const string mode)
 {
-    string attribs[] = avl_detailattribs(srcGeometry);
-    foreach (string attribName; attribs)
-        avl_copydetailattrib(srcGeometry, dstGeometry, attribName, mode);
+    string attribs[] = avl_detailattribs(geometry);
+    for (string attribName : attribs)
+        avl_copydetailattrib(geometry, geohandle, attribName, mode);
 }
 
 void
-avl_copydetailattribs(const int srcGeometry;
-	                  const int dstGeometry;
-	                  const string mode;
-	                  const string pattern)
+avl_copydetailattribs(const int geometry;
+                      const int geohandle;
+                      const string mode;
+                      const string pattern)
 {
-    string attribs[] = avl_detailattribs(srcGeometry);
-    foreach (string attribName; attribs)
+    string attribs[] = avl_detailattribs(geometry);
+    for (string attribName : attribs)
         if (match(pattern, attribName))
-            avl_copydetailattrib(srcGeometry, dstGeometry, attribName, mode);
+            avl_copydetailattrib(geometry, geohandle, attribName, mode);
 }
 
 #endif  // _AVL_COPYDETAILATTRIBS_H_

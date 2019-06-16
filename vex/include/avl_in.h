@@ -11,7 +11,7 @@
 int
 avl_in(const float sequence[]; const float value)
 {
-    foreach (float itemValue; sequence)
+    for (float itemValue : sequence)
         if (avl_isalmostequal(itemValue, value, M_TOLERANCE))
             return 1;
     return 0;
@@ -57,7 +57,7 @@ avl_in(const float sequence[];
        const float value;
        const float tolerance)
 {
-    foreach (float itemValue; sequence)
+    for (float itemValue : sequence)
         if (avl_isalmostequal(itemValue, value, tolerance))
             return 1;
     return 0;

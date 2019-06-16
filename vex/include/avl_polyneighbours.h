@@ -31,7 +31,7 @@ avl_polyneighbours(const int geometry;
                 break;
         }
     } else {
-        foreach (int pt; primpoints(geometry, primnum))
+        for (int pt : primpoints(geometry, primnum))
         {
             push(primitives, pointprims(geometry, pt));
         }
@@ -75,7 +75,7 @@ avl_polyneighbours(const string geometry;
                 break;
         }
     } else {
-        foreach (int pt; primpoints(geometry, primnum))
+        for (int pt : primpoints(geometry, primnum))
         {
             push(primitives, pointprims(geometry, pt));
         }

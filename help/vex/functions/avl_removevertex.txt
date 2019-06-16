@@ -1,0 +1,34 @@
+= avl_removevertex =
+
+#type: vex
+#context: all
+#tags: vertex, delete, avl
+#group: geo
+
+"""Removes a vertex from the geometry."""
+
+:usage: `void avl_removevertex(int geohandle, int vtxnum)`
+:usage: `void avl_removevertex(int geohandle, int primnum, int vtxnum)`
+:usage: `void avl_removevertex(int geohandle, int primnum, int vtxnum, int mode)`
+
+    Removes a vertex in the geometry specified by `geohandle`.
+
+[Include:_avl_common#geohandle]
+
+:arg:primnum:
+    Primitive number.
+
+:arg:vtxnum:
+    Vertex number.
+    
+    If `primnum` is `-1`, `vtxnum` is treated as a linear index. Otherwise, the pair (`primnum`, `vtxnum`) is used to identify a vertex in a primitive’s vertex list.
+
+:arg:mode:
+    Todo (1.0): 1 - remove signle point
+
+[Include:_avl_common#not_std]
+
+@related
+
+- [Vex:removepoint]
+- [Vex:removeprim]
