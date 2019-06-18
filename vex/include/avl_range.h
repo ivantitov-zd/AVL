@@ -9,12 +9,12 @@ avl_range(const float start;
 {
     float newArray[];
     int index = 0;
-    if (step > 0.0)
+    if (step > 0)
     {
         resize(newArray, int(ceil((end - start) / float(step))));
         for (float value = start; value < end; value += step)
             newArray[index++] = value;
-    } else if (step < 0.0)
+    } else if (step < 0)
     {
         resize(newArray, int(ceil(abs((end - start) / float(step)))));
         for (float value = start; value > end; value += step)
@@ -30,15 +30,15 @@ float[]
 avl_range(const float start; const float end)
 {
     if (end > start)
-        return avl_range(start, end, 1.0);
+        return avl_range(start, end, 1);
     else
-        return avl_range(start, end, -1.0);
+        return avl_range(start, end, -1);
 }
 
 float[]
 avl_range(const float end)
 {
-    return avl_range(0.0, end, 1.0);
+    return avl_range(0, end, 1);
 }
 
 int[]

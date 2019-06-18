@@ -24,8 +24,8 @@ avl_trivolume(const vector origin; const vector vertices[])
     return abs(determinant(set(edge1, edge2, edge3))) / 6.0;
 }
 
-// Todo (?): float avl_trivolume(<geometry>; vector origin; int point1; int point2; int point3)
+// Todo (1.0): float avl_trivolume(<geometry>; vector origin; int point1; int point2; int point3)
 
-// Todo (?): float avl_trivolume(<geometry>; int origin; int point1; int point2; int point3)
+// Todo (1.0): float avl_trivolume(<geometry>; int origin; int point1; int point2; int point3)
 
 #endif  // _AVL_TRIVOLUME_H_

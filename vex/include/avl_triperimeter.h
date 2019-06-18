@@ -40,6 +40,6 @@ avl_triperimeter(const vector vertices[])
            distance(vertices[2], vertices[0]);
 }
 
-// Todo (?): float avl_triperimeter(<geometry>; int point1; int point2; int point3)
+// Todo (1.0): float avl_triperimeter(<geometry>; int point1; int point2; int point3)
 
 #endif  // _AVL_TRIPERIMETER_H_

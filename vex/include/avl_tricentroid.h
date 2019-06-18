@@ -32,6 +32,6 @@ avl_tricentroid(const vector vertices[])
     return (vertices[0] + vertices[1] + vertices[2]) / 3.0;
 }
 
-// Todo (?): float avl_tricentroid(<geometry>; int point1; int point2; int point3)
+// Todo (1.0): float avl_tricentroid(<geometry>; int point1; int point2; int point3)
 
 #endif  // _AVL_TRICENTROID_H_

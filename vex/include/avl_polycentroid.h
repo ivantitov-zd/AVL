@@ -23,12 +23,12 @@ avl_polycentroid(const vector vertices[]; const string mode)
     if (vertexCount == 3)  // Triangle
         return avl_tricentroid(vertices);
     if (vertexCount < 3)  // Not polygon
-        return {0.0, 0.0, 0.0};
+        return {0, 0, 0};
     if (mode == 'corners')
         return avg(vertices);
     else if (mode == 'edges')
     {
-        vector centroid = {0.0, 0.0, 0.0};
+        vector centroid = {0, 0, 0};
         float perimeter2 = avl_polyperimeter(vertices);//
         vector pos1, pos2;
         for (int i = 0; i < vertexCount; ++i)
@@ -40,7 +40,7 @@ avl_polycentroid(const vector vertices[]; const string mode)
         return centroid;
     } else if (mode == 'areas')
     {
-        vector centroid = {0.0, 0.0, 0.0};
+        vector centroid = {0, 0, 0};
         float area = avl_polyarea(0, 0);//
         vector pos0 = vertices[0];
         vector pos1, pos2;
@@ -49,7 +49,7 @@ avl_polycentroid(const vector vertices[]; const string mode)
             pos1 = vertices[i];
             pos2 = vertices[i+1];
             vector cross = cross(pos0-pos1, pos0-pos2);
-            if (dot(cross, {1.0, 0.9, 0.8}) >= 0.0)
+            if (dot(cross, {1, 0.9, 0.8}) >= 0)
                 centroid += avl_tricentroid(pos0, pos1, pos2) *
                             (avl_triarea(pos0, pos1, pos2) / area);
             else
@@ -60,7 +60,7 @@ avl_polycentroid(const vector vertices[]; const string mode)
     } else
     {
         error('Polygon Centroid AVL: Unknown mode ' + mode);
-        return {0.0, 0.0, 0.0};
+        return {0, 0, 0};
     }
 }
 

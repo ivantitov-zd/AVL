@@ -9,11 +9,20 @@ void
 avl_copyvertexattribs(const int geometry;
                       const int geohandle;
                       const int srcVtxnum;
+                      const int dstVtxnum)
+{
+    for (string attribName : avl_vertexattribs(geometry))
+        avl_copyvertexattrib(geometry, geohandle, srcVtxnum, dstVtxnum, attribName);
+}
+
+void
+avl_copyvertexattribs(const int geometry;
+                      const int geohandle;
+                      const int srcVtxnum;
                       const int dstVtxnum;
                       const string mode)
 {
-    string attribs[] = avl_vertexattribs(geometry);
-    for (string attribName : attribs)
+    for (string attribName : avl_vertexattribs(geometry))
         avl_copyvertexattrib(geometry, geohandle, srcVtxnum, dstVtxnum, attribName, mode);
 }
 
@@ -25,8 +34,7 @@ avl_copyvertexattribs(const int geometry;
                       const string mode;
                       const string pattern)
 {
-    string attribs[] = avl_vertexattribs(geometry);
-    for (string attribName : attribs)
+    for (string attribName : avl_vertexattribs(geometry))
         if (match(pattern, attribName))
             avl_copyvertexattrib(geometry, geohandle, srcVtxnum, dstVtxnum, attribName, mode);
 }

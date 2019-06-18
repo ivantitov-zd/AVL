@@ -17,8 +17,8 @@ avl_polyarea(const vector vertices[])
     if (vertexCount == 3)  // Triangle
         return avl_triarea(vertices);
     if (vertexCount < 3)  // Not polygon
-        return 0.0;
-    float area = 0.0;
+        return 0;
+    float area = 0;
     for (int i = 1; i < vertexCount-1; ++i)
         area += avl_triarea(vertices[0], vertices[i], vertices[i+1]);
     return area;
@@ -31,9 +31,9 @@ avl_polyarea(const vector vertices[]; const string mode)
     if (vertexCount == 3)  // Triangle
         return avl_triarea(vertices);
     if (vertexCount < 3)  // Not polygon
-        return 0.0;
-    float area = 0.0;
-    if if (mode == 'convex')
+        return 0;
+    float area = 0;
+    if (mode == 'convex')
     {
         for (int i = 1; i < vertexCount-1; ++i)
             area += avl_triarea(vertices[0], vertices[i], vertices[i+1]);
@@ -44,7 +44,7 @@ avl_polyarea(const vector vertices[]; const string mode)
         {
             vector cross = cross(vertices[0] - vertices[i],
                                  vertices[0] - vertices[i+1]);
-            if (dot(cross, {1.0, 0.9, 0.8}) >= 0)
+            if (dot(cross, {1, 0.9, 0.8}) >= 0)
                 area += length(cross);
             else
                 area -= length(cross);

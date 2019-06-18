@@ -2,6 +2,7 @@
 #ifndef _AVL_H_
 #define _AVL_H_
 
+#include "avl_version.h"
 #include "avl_primarea.h" // doc
 #include "avl_primperimeter.h" // doc
 #include "avl_primvolume.h" // doc
@@ -46,7 +47,7 @@
 #include "avl_copyvertexattribs.h"
 #include "avl_copydetailattrib.h"
 #include "avl_copydetailattribs.h"
-#include "avl_tostring.h"
+#include "avl_tostr.h"
 #include "avl_sphericaldistance.h"
 #include "avl_copypointgroup.h"
 #include "avl_copypointgroups.h"
@@ -127,7 +128,12 @@
 #include "avl_primtypename.h"
 #include "avl_polysplit.h"
 #include "avl_copyprim.h"
-//#include "avl_copypoint.h"
-//#include "avl_pointnormal.h"
+#include "avl_copypoint.h"
+#include "avl_pointnormal.h"
+#include "avl_vertexnormal.h"
+#include "avl_primnormal.h"
+//#include "avl_divide.h"
+#include "avl_isclosed.h"
+#include "avl_ispolyline.h"
 
 #endif  // _AVL_H_

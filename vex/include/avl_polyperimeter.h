@@ -22,9 +22,9 @@ avl_polyperimeter(const vector vertices[])
     return perimeter;
 }
 
-// Todo (?): float avl_polyperimeter(<geometry>; const int points[])
+// Todo (1.0): float avl_polyperimeter(<geometry>; const int points[])
 
-// Todo (?2.0): float avl_polyperimeter(const int ...)
+// Todo (2.0): float avl_polyperimeter(const int ...)
 
 // Todo (2.0): float avl_polyperimeter(const vector ...)
 

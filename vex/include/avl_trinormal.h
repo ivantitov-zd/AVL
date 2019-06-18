@@ -21,6 +21,6 @@ avl_trinormal(const vector vertices[])
     return normalize(cross(edge1, edge2));
 }
 
-// Todo (1.1): float avl_trinormal(<geometry>; int point1; int point2; int point3)
+// Todo (1.0): float avl_trinormal(<geometry>; int point1; int point2; int point3)
 
 #endif  // _AVL_TRINORMAL_H_

@@ -7,26 +7,34 @@
 
 void
 avl_copypointgroups(const int geometry;
-	                const int geohandle;
-	                const int srcPtnum;
-	                const int dstPtnum;
-	                const string mode)
+                    const int geohandle;
+                    const int srcPtnum;
+                    const int dstPtnum)
 {
-    string groups[] = avl_pointgroups(geometry);
-    for (string groupName : groups)
+    for (string groupName : avl_pointgroups(geometry))
+        avl_copypointgroup(geometry, geohandle, srcPtnum, dstPtnum, groupName);
+}
+
+void
+avl_copypointgroups(const int geometry;
+                    const int geohandle;
+                    const int srcPtnum;
+                    const int dstPtnum;
+                    const string mode)
+{
+    for (string groupName : avl_pointgroups(geometry))
         avl_copypointgroup(geometry, geohandle, srcPtnum, dstPtnum, groupName, mode);
 }
 
 void
 avl_copypointgroups(const int geometry;
-	                const int geohandle;
-	                const int srcPtnum;
-	                const int dstPtnum;
-	                const string pattern;
-	                const string mode)
+                    const int geohandle;
+                    const int srcPtnum;
+                    const int dstPtnum;
+                    const string pattern;
+                    const string mode)
 {
-    string groups[] = avl_pointgroups(geometry);
-    for (string groupName : groups)
+    for (string groupName : avl_pointgroups(geometry))
         if (match(pattern, groupName))
             avl_copypointgroup(geometry, geohandle, srcPtnum, dstPtnum, groupName, mode);
 }

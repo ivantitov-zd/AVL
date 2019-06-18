@@ -7,7 +7,7 @@ avl_removevertex(const int geohandle;
                  const int primnum;
                  const int vtxnum)
 {
-    int destinationPoint = addpoint(geohandle, {0.0, 0.0, 0.0});
+    int destinationPoint = addpoint(geohandle, {0, 0, 0});
     setvertexpoint(geohandle, primnum, vtxnum, destinationPoint);
     removepoint(geohandle, destinationPoint);
 }

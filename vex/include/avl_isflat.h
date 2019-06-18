@@ -2,7 +2,7 @@
 #ifndef _AVL_ISFLAT_H_
 #define _AVL_ISFLAT_H_
 
-#include "avl_isalmostequal.h"
+#include "avl_almostequal.h"
 
 int
 avl_isflat(const int geometry; const int primnum)
@@ -20,7 +20,7 @@ avl_isflat(const int geometry; const int primnum)
         pos1 = point(geometry, 'P', points[i-1]);
         pos2 = point(geometry, 'P', points[i]);
         pos3 = point(geometry, 'P', points[i+1]);
-        if (!avl_isalmostequal(cross(pos1 - pos2, pos2 - pos3), ref))
+        if (!avl_almostequal(cross(pos1 - pos2, pos2 - pos3), ref))
             return 0;
     }
     return 1;
@@ -42,7 +42,7 @@ avl_isflat(const string geometry; const int primnum)
         pos1 = point(geometry, 'P', points[i-1]);
         pos2 = point(geometry, 'P', points[i]);
         pos3 = point(geometry, 'P', points[i+1]);
-        if (!avl_isalmostequal(cross(pos1 - pos2, pos2 - pos3), ref))
+        if (!avl_almostequal(cross(pos1 - pos2, pos2 - pos3), ref))
             return 0;
     }
     return 1;

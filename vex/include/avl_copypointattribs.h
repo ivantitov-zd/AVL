@@ -9,11 +9,20 @@ void
 avl_copypointattribs(const int geometry;
 	                 const int geohandle;
 	                 const int srcPtnum;
+	                 const int dstPtnum)
+{
+    for (string attribName : avl_pointattribs(geometry))
+        avl_copypointattrib(geometry, geohandle, srcPtnum, dstPtnum, attribName);
+}
+
+void
+avl_copypointattribs(const int geometry;
+	                 const int geohandle;
+	                 const int srcPtnum;
 	                 const int dstPtnum;
 	                 const string mode)
 {
-    string attribs[] = avl_pointattribs(geometry);
-    for (string attribName : attribs)
+    for (string attribName : avl_pointattribs(geometry))
         avl_copypointattrib(geometry, geohandle, srcPtnum, dstPtnum, attribName, mode);
 }
 
@@ -25,8 +34,7 @@ avl_copypointattribs(const int geometry;
 	                 const string mode;
 	                 const string pattern)
 {
-    string attribs[] = avl_pointattribs(geometry);
-    for (string attribName : attribs)
+    for (string attribName : avl_pointattribs(geometry))
         if (match(pattern, attribName))
             avl_copypointattrib(geometry, geohandle, srcPtnum, dstPtnum, attribName, mode);
 }

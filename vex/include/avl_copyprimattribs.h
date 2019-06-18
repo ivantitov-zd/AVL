@@ -9,11 +9,20 @@ void
 avl_copyprimattribs(const int geometry;
                     const int geohandle;
                     const int srcPrimnum;
+                    const int dstPrimnum)
+{
+    for (string attribName : avl_primattribs(geometry))
+        avl_copyprimattrib(geometry, geohandle, srcPrimnum, dstPrimnum, attribName);
+}
+
+void
+avl_copyprimattribs(const int geometry;
+                    const int geohandle;
+                    const int srcPrimnum;
                     const int dstPrimnum;
                     const string mode)
 {
-    string attribs[] = avl_primattribs(geometry);
-    for (string attribName : attribs)
+    for (string attribName : avl_primattribs(geometry))
         avl_copyprimattrib(geometry, geohandle, srcPrimnum, dstPrimnum, attribName, mode);
 }
 
@@ -25,8 +34,7 @@ avl_copyprimattribs(const int geometry;
                     const string mode;
                     const string pattern)
 {
-    string attribs[] = avl_primattribs(geometry);
-    for (string attribName : attribs)
+    for (string attribName : avl_primattribs(geometry))
         if (match(pattern, attribName))
             avl_copyprimattrib(geometry, geohandle, srcPrimnum, dstPrimnum, attribName, mode);
 }

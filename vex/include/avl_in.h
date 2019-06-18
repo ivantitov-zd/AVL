@@ -6,13 +6,13 @@
 
 #include <math.h>
 
-#include "avl_isalmostequal.h"
+#include "avl_almostequal.h"
 
 int
 avl_in(const float sequence[]; const float value)
 {
     for (float itemValue : sequence)
-        if (avl_isalmostequal(itemValue, value, M_TOLERANCE))
+        if (avl_almostequal(itemValue, value, M_TOLERANCE))
             return 1;
     return 0;
 }
@@ -29,7 +29,7 @@ avl_in(const float sequence[];
         return;
     }
     for (int i = start; start < sequenceLength; ++i)
-        if (avl_isalmostequal(sequence[i], value, M_TOLERANCE))
+        if (avl_almostequal(sequence[i], value, M_TOLERANCE))
             return 1;
     return 0;
 }
@@ -47,7 +47,7 @@ avl_in(const float sequence[];
         return;
     }
     for (int i = start; start < end; ++i)
-        if (avl_isalmostequal(sequence[i], value, M_TOLERANCE))
+        if (avl_almostequal(sequence[i], value, M_TOLERANCE))
             return 1;
     return 0;
 }
@@ -58,7 +58,7 @@ avl_in(const float sequence[];
        const float tolerance)
 {
     for (float itemValue : sequence)
-        if (avl_isalmostequal(itemValue, value, tolerance))
+        if (avl_almostequal(itemValue, value, tolerance))
             return 1;
     return 0;
 }
@@ -77,7 +77,7 @@ avl_in(const float sequence[];
         return;
     }
     for (int i = start; start < end; ++i)
-        if (avl_isalmostequal(sequence[i], value, tolerance))
+        if (avl_almostequal(sequence[i], value, tolerance))
             return 1;
     return 0;
 }

@@ -7,6 +7,105 @@ avl_copyprimattrib(const int geometry;
                    const int geohandle;
                    const int srcPrimnum;
                    const int dstPrimnum;
+                   const string attribName)
+{
+    int success = -1;
+    int attribType = primattribtype(geometry, attribName);
+    if (attribType == 1)  // Float-based attributes
+    {
+        int attribSize = primattribsize(geometry, attribName);
+        if (attribSize == 1)  // Float
+        {
+            float value = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 3)  // Vector
+        {
+            vector value = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 4)  // Vector4 or Matrix2
+        {
+            vector4 value = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 9)  // Matrtix3
+        {
+            matrix3 value = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 16)  // Matrix
+        {
+            matrix value = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 2)  // Vector2
+        {
+            vector2 value = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else
+        {
+            error('Copy Attribute AVL: Unsupported size');
+            return success;
+        }
+    } else if (attribType == 0)  // Integer
+    {
+        int value = prim(geometry, attribName, srcPrimnum);
+        success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+    } else if (attribType == 2)  // String
+    {
+        string value = prim(geometry, attribName, srcPrimnum);
+        success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+    } else if (attribType == 4)  // Float-based Array
+    {
+        int attribSize = primattribsize(geometry, attribName);
+        if (attribSize == 1)  // Float
+        {
+            float value[] = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 3)  // Vector
+        {
+            vector value[] = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 4)  // Vector4 or Matrix2
+        {
+            vector4 value[] = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 9)  // Matrtix3
+        {
+            matrix3 value[] = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 16)  // Matrix
+        {
+            matrix value[] = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else if (attribSize == 2)  // Vector2
+        {
+            vector2 value[] = prim(geometry, attribName, srcPrimnum);
+            success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+        } else
+        {
+            error('Copy Attribute AVL: Unsupported size');
+            return success;
+        }
+    } else if (attribType == 3)  // Array of Integers
+    {
+        int value[] = prim(geometry, attribName, srcPrimnum);
+        success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+    } else if (attribType == 5)  // Array of Strings
+    {
+        string value[] = prim(geometry, attribName, srcPrimnum);
+        success = setprimattrib(geohandle, attribName, dstPrimnum, value);
+    } else
+    {
+        error('Copy Attribute AVL: Unsupported type');
+        return success;
+    }
+    string attribTypeInfo = primattribtypeinfo(geometry, attribName);
+    setattribtypeinfo(geohandle, 'prim', attribName, attribTypeInfo);
+    return success;
+}
+
+int
+avl_copyprimattrib(const int geometry;
+                   const int geohandle;
+                   const int srcPrimnum;
+                   const int dstPrimnum;
                    const string attribName;
                    const string mode)
 {
@@ -41,7 +140,7 @@ avl_copyprimattrib(const int geometry;
             success = setprimattrib(geohandle, attribName, dstPrimnum, value, mode);
         } else
         {
-            error('Copy Attribute AVL: Unknown size');
+            error('Copy Attribute AVL: Unsupported size');
             return success;
         }
     } else if (attribType == 0)  // Integer
@@ -81,7 +180,7 @@ avl_copyprimattrib(const int geometry;
             success = setprimattrib(geohandle, attribName, dstPrimnum, value, mode);
         } else
         {
-            error('Copy Attribute AVL: Unknown size');
+            error('Copy Attribute AVL: Unsupported size');
             return success;
         }
     } else if (attribType == 3)  // Array of Integers
@@ -94,7 +193,7 @@ avl_copyprimattrib(const int geometry;
         success = setprimattrib(geohandle, attribName, dstPrimnum, value, mode);
     } else
     {
-        error('Copy Attribute AVL: Unknown type');
+        error('Copy Attribute AVL: Unsupported type');
         return success;
     }
     string attribTypeInfo = primattribtypeinfo(geometry, attribName);

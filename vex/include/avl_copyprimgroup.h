@@ -7,6 +7,17 @@ avl_copyprimgroup(const int geometry;
                   const int geohandle;
                   const int srcPrimnum;
                   const int dstPrimnum;
+                  const string groupName)
+{
+    int value = inprimgroup(geometry, groupName, srcPrimnum);
+    return setprimgroup(geohandle, groupName, dstPrimnum, value);
+}
+
+int
+avl_copyprimgroup(const int geometry;
+                  const int geohandle;
+                  const int srcPrimnum;
+                  const int dstPrimnum;
                   const string groupName;
                   const string mode)
 {

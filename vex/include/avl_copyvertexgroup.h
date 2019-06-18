@@ -7,6 +7,17 @@ avl_copyvertexgroup(const int geometry;
                     const int geohandle;
                     const int srcVtxnum;
                     const int dstVtxnum;
+                    const string groupName)
+{
+    int value = invertexgroup(geometry, groupName, srcVtxnum);
+    return setvertexgroup(geohandle, groupName, dstVtxnum, -1, value);
+}
+
+int
+avl_copyvertexgroup(const int geometry;
+                    const int geohandle;
+                    const int srcVtxnum;
+                    const int dstVtxnum;
                     const string groupName;
                     const string mode)
 {

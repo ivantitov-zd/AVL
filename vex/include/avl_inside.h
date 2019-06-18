@@ -10,7 +10,7 @@ int avl_inside(const int geometry; const vector position)
     vector hitPosition = primuv(geometry, 'P', primitive, uvw);
     vector normal = prim_normal(geometry, primitive, uvw);
     vector direction = normalize(hitPosition - position);
-    if (dot(direction, normal) > 0.0)
+    if (dot(direction, normal) > 0)
         return 1;
     else
         return 0;
@@ -24,7 +24,7 @@ int avl_inside(const string geometry; const vector position)
     vector hitPosition = primuv(geometry, 'P', primitive, uvw);
     vector normal = prim_normal(geometry, primitive, uvw);
     vector direction = normalize(hitPosition - position);
-    if (dot(direction, normal) > 0.0)
+    if (dot(direction, normal) > 0)
         return 1;
     else
         return 0;

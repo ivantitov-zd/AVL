@@ -9,11 +9,20 @@ void
 avl_copyprimgroups(const int geometry;
                    const int geohandle;
                    const int srcPrimnum;
+                   const int dstPrimnum)
+{
+    for (string groupName : avl_primgroups(geometry))
+        avl_copyprimgroup(geometry, geohandle, srcPrimnum, dstPrimnum, groupName);
+}
+
+void
+avl_copyprimgroups(const int geometry;
+                   const int geohandle;
+                   const int srcPrimnum;
                    const int dstPrimnum;
                    const string mode)
 {
-    string groups[] = avl_primgroups(geometry);
-    for (string groupName : groups)
+    for (string groupName : avl_primgroups(geometry))
         avl_copyprimgroup(geometry, geohandle, srcPrimnum, dstPrimnum, groupName, mode);
 }
 
@@ -25,8 +34,7 @@ avl_copyprimgroups(const int geometry;
                    const string mode;
                    const string pattern)
 {
-    string groups[] = avl_primgroups(geometry);
-    for (string groupName : groups)
+    for (string groupName : avl_primgroups(geometry))
         if (match(pattern, groupName))
             avl_copyprimgroup(geometry, geohandle, srcPrimnum, dstPrimnum, groupName, mode);
 }

@@ -7,6 +7,17 @@ avl_copypointgroup(const int geometry;
                    const int geohandle;
                    const int srcPtnum;
                    const int dstPtnum;
+                   const string groupName)
+{
+    int value = inpointgroup(geometry, groupName, srcPtnum);
+    return setpointgroup(geohandle, groupName, dstPtnum, value);
+}
+
+int
+avl_copypointgroup(const int geometry;
+                   const int geohandle;
+                   const int srcPtnum;
+                   const int dstPtnum;
                    const string groupName;
                    const string mode)
 {
